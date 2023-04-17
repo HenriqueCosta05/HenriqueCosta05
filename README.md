@@ -35,7 +35,3 @@ Sou um programador apaixonado pela resolução de problemas. Procuro um emprego 
 ### Minha trajetória acadêmica e cursos: 
 
 * 🎓 Estudante da FATEC no Curso Superior de Tecnologia em Desenvolvimento de Software Multiplataforma. (Fevereiro 2023 - Dezembro 2025)
-
-* Curso de Desenvolvimento Web Full-Stack, criado pela instrutora Angela Yu (Udemy)
-
-* Bootcamp de Java, uma parceria com a empresa Digital Innovation One (DIO) e Banco PAN.
