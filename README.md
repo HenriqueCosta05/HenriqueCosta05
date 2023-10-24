@@ -3,8 +3,6 @@
 
 <br>
 <br>
-
-- 💻 Atualmente, estou liderando um projeto acadêmico!<br>[Projeto Interdisciplinar - FATEC](https://github.com/HenriqueCosta05/Projeto_Interdisciplinar_II)
 <br>
 <br>
 
