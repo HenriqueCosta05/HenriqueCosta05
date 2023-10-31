@@ -9,7 +9,7 @@
 - 🌱 Atualmente, estou aprendendo:<br><br>**Bancos de dados relacionais (Oracle DB e MySQL),<br><br>Desenvolvimento Web (Node.js e React.js)<br><br>Técnicas de programação (com ênfase na linguagem de programação Java e os paradigmas de orientação a objetos e técnicas de estruturas de dados)<br> <br>Engenharia de Software (utilizando os princípios e padrões de projeto MVC, bem como metodologias ágeis de desenvolvimento)**
 <br>
 <br>
-- 👨‍💻 Meus principais projetos estão disponíveis no meu portfólio, através do link: [https://henriquebenedictocosta.netlify.app/](https://henriquebenedictocosta.netlify.app/)
+- 👨‍💻 Meus principais projetos estão disponíveis no meu portfólio, através do link: [Portólio](https://henriquebenedictocosta.netlify.app/)
 
 - 💬 Pergunte-me sobre **React, Firebase, Node e Java**
 
