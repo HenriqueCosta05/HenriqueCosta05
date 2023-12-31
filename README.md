@@ -1,4 +1,4 @@
-<h1 align="center">Prazer 👋! Sou o Henrique, um estudante e desenvolvedor de sistemas</h1>
+<h1 align="center">Prazer 👋! Sou o Henrique, um desenvolvedor de sistemas</h1>
 
 ###
 
