@@ -5,10 +5,11 @@ export const List = styled(Navbar.List)`
     display: flex;
     gap: 1rem;
     align-items: center;
-    @media (max-width: 968px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    
+    justify-content: center;
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 20px auto;
     }
 `;

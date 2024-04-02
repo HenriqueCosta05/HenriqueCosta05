@@ -9,8 +9,9 @@ function Homepage() {
   const [language, setLanguage] = useState("english");
   const [theme, setTheme] = useState("dark");
   const [data, setData] = useState(null);
-  const [logo, setLogo] = useState(<Fragment />);
+  const [logo, setLogo] = useState(<LightLogo />);
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     fetch("websiteInfo.json")
       .then((response) => response.json())

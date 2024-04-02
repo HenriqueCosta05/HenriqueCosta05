@@ -1,62 +1,51 @@
 import PropTypes from "prop-types";
-import * as Navbar from "@radix-ui/react-navigation-menu";
 import { Root } from "../../style/components/Navbar/index";
 import { Link } from "../../style/components/Navbar/Link";
 import { Button } from "../../style/components/Navbar/Button";
 import { Item } from "../../style/components/Navbar/Item";
 import { List } from "../../style/components/Navbar/List";
+import { NavList } from "./Navlist";
 import { ExpandButtonComponent } from "./ExpandButton";
-import { useState } from "react";
+import { useState, useEffect} from "react";
+import { StyledNavList } from "../../style/components/Navbar/StyledNavList";
 
 export default function NavBar(props) {
   const [open, setOpen] = useState(false);
-  const hasExpandButton = (window.innerWidth <= 768) ? true : false;
+  const [hasExpandButton, setHasExpandButton] = useState(window.innerWidth <= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setHasExpandButton(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <Root>
-      <List>
+      <List className="first-child">
         <Item>
           <Link href="/">{props.logo}</Link>
         </Item>
         {hasExpandButton && (
-          <ExpandButtonComponent open={open} setOpen={() => {
-            setOpen(!open);
-          }} />
+          <ExpandButtonComponent
+            open={open}
+            setOpen={() => {
+              setOpen(!open);
+            }}
+          />
         )}
-        <Item>
-        </Item>
+        <Item></Item>
       </List>
-        <List>
-        <Item>
-          <Link href="#">{props.home}</Link>
-        </Item>
-        <Item>
-          <Link href="#about">{props.about}</Link>
-        </Item>
-        <Item>
-          <Link href="#projects">{props.projects}</Link>
-        </Item>
-        <Item>
-          <Link href="#portfolio">{props.portfolio}</Link>
-        </Item>
-        <Item>
-          <Link href="#services">{props.services}</Link>
-        </Item>
-        <Item>
-          <Link href="#contact-me">{props.contact}</Link>
-        </Item>
-      </List>
-      <List>
-        <Item>
-          <Button onClick={props.changeThemeFunc}>
-            {props.changeThemeText}
-          </Button>
-        </Item>
-        <Item>  
-          <Button onClick={props.changeLanguageFunc}>
-            {props.changeLanguageText}
-          </Button>
-        </Item>
-      </List>
+      {hasExpandButton ? (
+          <StyledNavList {...props} open={open} />
+      ) : (
+        <NavList {...props} />
+      )}
     </Root>
   );
 }
@@ -73,4 +62,5 @@ NavBar.propTypes = {
   changeLanguageFunc: PropTypes.func.isRequired,
   changeLanguageText: PropTypes.string.isRequired,
   logo: PropTypes.element.isRequired,
+
 };
