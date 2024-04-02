@@ -4,8 +4,7 @@ import { Item } from "../../style/components/Navbar/Item";
 import { Link } from "../../style/components/Navbar/Link";
 import { List } from "../../style/components/Navbar/List";
 
-
-export const NavList = ({className, ...props }) => (
+export const NavList = ({ className, ...props }) => (
     <Content className={className} open={props.open}>
         <List>
             <Item>

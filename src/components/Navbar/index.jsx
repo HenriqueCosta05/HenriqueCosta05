@@ -1,13 +1,12 @@
 import PropTypes from "prop-types";
 import { Root } from "../../style/components/Navbar/index";
 import { Link } from "../../style/components/Navbar/Link";
-import { Button } from "../../style/components/Navbar/Button";
 import { Item } from "../../style/components/Navbar/Item";
 import { List } from "../../style/components/Navbar/List";
 import { NavList } from "./Navlist";
 import { ExpandButtonComponent } from "./ExpandButton";
 import { useState, useEffect} from "react";
-import { StyledNavList } from "../../style/components/Navbar/StyledNavList";
+import { ResponsiveNavList } from "../../style/components/Navbar/ResponsiveNavList";
 
 export default function NavBar(props) {
   const [open, setOpen] = useState(false);
@@ -42,7 +41,7 @@ export default function NavBar(props) {
         <Item></Item>
       </List>
       {hasExpandButton ? (
-          <StyledNavList {...props} open={open} />
+        <ResponsiveNavList {...props} open={open} />
       ) : (
         <NavList {...props} />
       )}
