@@ -6,6 +6,10 @@ export const BannerHeading = styled.h1`
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
-  text-color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.text};
   margin: 1rem;
+
+  @media (max-width: 1024px) {
+    font-size: 2.2rem;
+  }
 `;

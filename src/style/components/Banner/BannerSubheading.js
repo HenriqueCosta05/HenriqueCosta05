@@ -8,4 +8,8 @@ export const BannerSubheading = styled.h2`
   text-align: left;
   text-color: ${(props) => props.theme.text};
   margin: 2rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+  }
 `;

@@ -13,12 +13,12 @@ export default function Banner(props) {
   return (
     <>
       <BannerWrapper>
+        <BannerCover src={props.coverImage} />
         <BannerContainer>
           <BannerHeading>{props.heading}</BannerHeading>
           <BannerSubheading>{props.subheading}</BannerSubheading>
           <BannerButton onClick={handleClick}>{props.buttonText}</BannerButton>
         </BannerContainer>{" "}
-        <BannerCover src={props.coverImage} />
       </BannerWrapper>
     </>
   );

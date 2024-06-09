@@ -17,12 +17,10 @@ export const BannerContainer = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    font-size: 1rem;
-    flex-wrap: wrap;
-    max-width: 100%;
-    width: 100%;
-    height: 50%;
+    font-size: 2rem;
     border: none;
-    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    padding: 1rem 0;
   }
 `;

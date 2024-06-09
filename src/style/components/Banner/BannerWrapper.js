@@ -13,13 +13,14 @@ export const BannerWrapper = styled.div`
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
-  border: none;
+  flex-wrap: nowrap;
 
   @media (max-width: 1024px) {
     display: flex;
     font-size: 2rem;
-    flex-wrap: wrap;
+    width: 100%;
     max-width: 100%;
-    width: 90%;
+    flex-wrap: wrap;
+    border: none;
   }
 `;
