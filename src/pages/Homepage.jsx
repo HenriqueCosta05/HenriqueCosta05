@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "../style/theme/Themes";
 import NavBar from "../components/Navbar";
+import Banner from "../components/Banner/Banner";
 import { GlobalStyles } from "../style/theme/GlobalStyles";
 import LightLogo from "../components/Logo/LightLogo";
 import DarkLogo from "../components/Logo/DarkLogo";
@@ -55,6 +56,12 @@ function Homepage() {
           changeThemeFunc={themeButton}
           changeLanguageFunc={languageButton}
           logo={logo}
+        />
+        <Banner
+          heading={data[language][0].banner[0].title}
+          subheading={data[language][0].banner[0].subtitle}
+          buttonText={data[language][0].banner[0].button}
+          buttonLink={data[language][0].banner[0].buttonLink}
         />
       </ThemeProvider>
     </>

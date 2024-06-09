@@ -1,81 +1,97 @@
 {
-    "portuguese": [
+  "portuguese": [
+    {
+      "navbar": [
         {
-            "navbar": [
-                {
-                    "id": 1,
-                    "text": "Início"
-                    
-                },
-                {
-                     "id": 2,
-                     "text": "Sobre mim"
-                },
-                {
-                     "id": 3,
-                    "text": "Projetos"
-                },
-                {
-                    "id": 4,
-                    "text": "Portfólio"
-                },
-                {
-                    "id": 5,
-                    "text": "Serviços"
-                },
-                {
-                    "id": 6,
-                    "text": "Contato"
-                },
-                {
-                    "id": 7,
-                    "text": "Mudar Tema"
-                }, 
-                {
-                    "id": 8,
-                    "text": "English"
-                }
-            ]
+          "id": 1,
+          "text": "Início"
+        },
+        {
+          "id": 2,
+          "text": "Sobre mim"
+        },
+        {
+          "id": 3,
+          "text": "Projetos"
+        },
+        {
+          "id": 4,
+          "text": "Portfólio"
+        },
+        {
+          "id": 5,
+          "text": "Serviços"
+        },
+        {
+          "id": 6,
+          "text": "Contato"
+        },
+        {
+          "id": 7,
+          "text": "Mudar Tema"
+        },
+        {
+          "id": 8,
+          "text": "English"
         }
-    ],
+      ],
+      "banner": [
+        {
+          "id": 1,
+          "title": "Desenvolvedor Web",
+          "subtitle": "'Ser desenvolvedor é uma viagem onde a próxima parada é a solução de um problema' - Thales Valentim.",
+          "button": "Ver projetos",
+          "buttonLink": "#projects"
+        }
+      ]
+    }
+  ],
 
-    "english": [
+  "english": [
+    {
+      "navbar": [
         {
-            "navbar": [
-                {
-                    "id": 1,
-                    "text": "Home"
-                    
-                },
-                {
-                     "id": 2,
-                     "text": "About me"
-                },
-                {
-                    "id": 3,
-                    "text": "Projects"
-                },
-                {
-                    "id": 4,
-                    "text": "Portfolio"
-                },
-                {
-                    "id": 5,
-                    "text": "Services"
-                },
-                {
-                    "id": 6,
-                    "text": "Contact"
-                },
-                {
-                    "id": 7,
-                    "text": "Change theme"
-                }, 
-                {
-                    "id": 8,
-                    "text": "Português"
-                }
-            ]
+          "id": 1,
+          "text": "Home"
+        },
+        {
+          "id": 2,
+          "text": "About me"
+        },
+        {
+          "id": 3,
+          "text": "Projects"
+        },
+        {
+          "id": 4,
+          "text": "Portfolio"
+        },
+        {
+          "id": 5,
+          "text": "Services"
+        },
+        {
+          "id": 6,
+          "text": "Contact"
+        },
+        {
+          "id": 7,
+          "text": "Change theme"
+        },
+        {
+          "id": 8,
+          "text": "Português"
         }
-    ]
+      ],
+      "banner": [
+        {
+          "id": 1,
+          "title": "Web Developer",
+          "subtitle": "'Being a developer is a journey where the next stop is solving a problem' - Thales Valentim.",
+          "button": "See projects",
+          "buttonLink": "#projects"
+        }
+      ]
+    }
+  ]
 }
