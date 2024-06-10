@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BannerButton = styled.button`
+export const Button = styled.button`
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;

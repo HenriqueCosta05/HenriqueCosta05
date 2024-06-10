@@ -1,26 +1,29 @@
 import styled from "styled-components";
 
-export const BannerContainer = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 100%;
   height: 100vh;
-  background-color: ${(props) => props.theme.background};
+  background-color: ${(props) =>
+    props.background === "primary"
+      ? props.theme.background
+      : props.theme.backgroundSecondary};
   color: ${(props) => props.theme.text};
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
+  flex-wrap: nowrap;
 
   @media (max-width: 1024px) {
     display: flex;
     font-size: 2rem;
-    border: none;
-    height: max-content;
     width: 100%;
-    padding: 1rem 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+    border: none;
   }
 `;

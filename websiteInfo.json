@@ -43,6 +43,15 @@
           "button": "Ver projetos",
           "buttonLink": "#projects"
         }
+      ],
+      "about": [
+        {
+          "id": 1,
+          "title": "Sobre mim",
+          "subtitle": "Meu nome é Henrique Costa e sou desenvolvedor full-stack, apaixonado por tecnologia desde o meu primeiro contato aos 8 anos. Estudo tecnologia de forma contínua desde os 16 anos, e atualmente estou cursando uma graduação onde posso aplicar na prática todo o conhecimento que adquiri ao longo dos anos.",
+          "buttonText": "Entre em contato",
+          "buttonLink": "#contact"
+        }
       ]
     }
   ],
@@ -90,6 +99,15 @@
           "subtitle": "'Being a developer is a journey where the next stop is solving a problem' - Thales Valentim.",
           "button": "See projects",
           "buttonLink": "#projects"
+        }
+      ],
+      "about": [
+        {
+          "id": 1,
+          "title": "About me",
+          "subtitle": "My name is Henrique Costa and I am a full-stack developer, passionate about technology since my first contact at the age of 8. I have been studying technology continuously since I was 16, and I am currently studying for a degree where I can apply in practice all the knowledge I have acquired over the years.",
+          "buttonText": "Contact me",
+          "buttonLink": "#contact"
         }
       ]
     }

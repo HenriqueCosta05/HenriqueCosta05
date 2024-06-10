@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BannerSubheading = styled.h2`
+export const Subheading = styled.h2`
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;

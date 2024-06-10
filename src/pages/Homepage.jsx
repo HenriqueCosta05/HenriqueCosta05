@@ -6,6 +6,7 @@ import Banner from "../components/Banner/Banner";
 import { GlobalStyles } from "../style/theme/GlobalStyles";
 import LightLogo from "../components/Logo/LightLogo";
 import DarkLogo from "../components/Logo/DarkLogo";
+import About from "../components/About/About";
 function Homepage() {
   const [language, setLanguage] = useState("english");
   const [theme, setTheme] = useState("dark");
@@ -62,6 +63,12 @@ function Homepage() {
           subheading={data[language][0].banner[0].subtitle}
           buttonText={data[language][0].banner[0].button}
           buttonLink={data[language][0].banner[0].buttonLink}
+        />
+        <About
+          heading={data[language][0].about[0].title}
+          subheading={data[language][0].about[0].subtitle}
+          buttonText={data[language][0].about[0].buttonText}
+          buttonLink={data[language][0].about[0].buttonLink}
         />
       </ThemeProvider>
     </>

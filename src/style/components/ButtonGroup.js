@@ -1,0 +1,9 @@
+import styled from "styled-components";
+
+export const ButtonGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+`;

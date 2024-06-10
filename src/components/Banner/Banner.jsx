@@ -1,10 +1,13 @@
 import PropTypes from "prop-types";
-import { BannerContainer } from "../../style/components/Banner/BannerContainer";
-import { BannerHeading } from "../../style/components/Banner/BannerHeading";
-import { BannerSubheading } from "../../style/components/Banner/BannerSubheading";
-import { BannerButton } from "../../style/components/Banner/BannerButton";
-import { BannerCover } from "../../style/components/Banner/BannerCover";
-import { BannerWrapper } from "../../style/components/Banner/BannerWrapper";
+import { Linkedin, Github, Mail } from "lucide-react";
+import { Wrapper } from "../../style/components/Wrapper";
+import { Cover } from "../../style/components/Cover";
+import { Container } from "../../style/components/Container";
+import { Heading } from "../../style/components/Heading";
+import { Subheading } from "../../style/components/Subheading";
+import { Button } from "../../style/components/Button";
+import { SocialButton } from "../../style/components/SocialButton";
+import { ButtonGroup } from "../../style/components/ButtonGroup";
 
 export default function Banner(props) {
   const handleClick = () => {
@@ -12,14 +15,25 @@ export default function Banner(props) {
   };
   return (
     <>
-      <BannerWrapper>
-        <BannerCover src={props.coverImage} />
-        <BannerContainer>
-          <BannerHeading>{props.heading}</BannerHeading>
-          <BannerSubheading>{props.subheading}</BannerSubheading>
-          <BannerButton onClick={handleClick}>{props.buttonText}</BannerButton>
-        </BannerContainer>{" "}
-      </BannerWrapper>
+      <Wrapper>
+        <Cover imageType="cover" />
+        <Container>
+          <Heading>{props.heading}</Heading>
+          <Subheading>{props.subheading}</Subheading>
+          <ButtonGroup>
+            <SocialButton href="https://www.linkedin.com/in/henriquecosta05/">
+              <Linkedin color="#fff" />
+            </SocialButton>
+            <SocialButton href="https://github.com/HenriqueCosta05">
+              <Github color="#fff" />
+            </SocialButton>
+            <SocialButton href="mailto:henriquebenedictocostadev@gmail.com">
+              <Mail color="#fff" />
+            </SocialButton>
+          </ButtonGroup>
+          <Button onClick={handleClick}>{props.buttonText}</Button>
+        </Container>
+      </Wrapper>
     </>
   );
 }
