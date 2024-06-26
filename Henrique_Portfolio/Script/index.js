@@ -53,7 +53,7 @@ ScrollReveal().reveal('.conteudo-inicio p, .conteudo-sobre', { origin: 'right' }
 
 /* Parte 6: Typed.js - Biblioteca */
 const typed = new Typed('.multiple-text', {
-    strings: ['Desenvolvedor Front-End', 'Programador Java'],
+    strings: ['Desenvolvedor Full-Stack', 'Violonista', 'Apaixonado por Tecnologia'],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 1000,
