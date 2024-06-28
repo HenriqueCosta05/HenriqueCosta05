@@ -7,7 +7,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=HenriqueCosta05&locale=pt-br&hide_title=false&layout=compact&card_width=320&langs_count=4&theme=dracula&hide_border=false&custom_title=Linguagens%20mais%20utilizadas" height="150" alt="languages graph"  />
 </div>
 
-- 🔭 Projeto no qual estou atuando ativamente: [uNotes](https://github.com/HenriqueCosta05/uNotes.git)
+- 🔭 Projetos que estou atuando ativamente: [uNotes](https://github.com/HenriqueCosta05/uNotes.git) e [Design Patterns](https://github.com/HenriqueCosta05/Design-Patterns)
 
 - 👨‍💻 Veja meu portfólio em: [https://henriquebenedictocosta.netlify.app](https://henriquebenedictocosta.netlify.app)
 
