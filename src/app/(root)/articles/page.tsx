@@ -10,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Articles",
   description:
-    "Discover insightful articles on a variety of topics, ranging from web development and programming to personal growth and industry trends. Stay informed and inspired with our latest posts.",
+    "Explore artigos esclarecedores sobre uma variedade de tópicos, que vão desde desenvolvimento web e programação até crescimento pessoal e tendências do setor. Mantenha-se informado e inspirado com minhas últimas postagens.",
   openGraph: {
     description:
-      "Discover insightful articles on a variety of topics, ranging from web development and programming to personal growth and industry trends. Stay informed and inspired with our latest posts.",
+      "Explore artigos esclarecedores sobre uma variedade de tópicos, que vão desde desenvolvimento web e programação até crescimento pessoal e tendências do setor. Mantenha-se informado e inspirado com minhas últimas postagens.",
   },
 };
 
@@ -23,7 +23,7 @@ export default async function Articles() {
   const articles = await getArticles();
 
   if (!articles)
-    toast.error("Error fetching articles, please try again later!");
+    toast.error("Error ao buscar artigos, por favor tente novamente mais tarde!");
 
   return (
     <section>
@@ -61,7 +61,7 @@ export default async function Articles() {
                       : article.title}
                   </h2>
                   <CustomNav
-                    txt="View Article"
+                    txt="Ver artigo"
                     className="flex items-center gap-2 text-sm text-white md:text-lg"
                   />
                 </div>

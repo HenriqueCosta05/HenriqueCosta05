@@ -60,15 +60,15 @@ export default function Articles() {
         >
           <GradientTxt
             tagName="h5"
-            txt="ARTICLES"
+            txt="ÚLTIMAS PUBLICAÇÕES"
             className="text-[22px] font-bold tracking-[4px]"
           />
           <h2 className="my-6 text-[40px] font-bold leading-[120%] tracking-[0.5px] text-white xl:text-[54px]">
-            Latest Articles
+            Artigos
           </h2>
 
           <CustomNav
-            txt="View all"
+            txt="Ver tudo"
             className="flex items-center gap-2 text-[14px] text-white lg:text-[18px]"
             to="/articles"
           />
@@ -92,7 +92,7 @@ export default function Articles() {
                 {article.title}.
               </h2>
               <CustomNav
-                txt="Read the article"
+                txt="Ler publicação"
                 className="flex items-center gap-2 text-white md:text-[18px]"
               />
             </FadeUp>

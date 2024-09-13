@@ -11,7 +11,6 @@ import Footer from "./components/Footer/Footer";
 import GradientTxt from "./components/Reusables/GradientTxt";
 import Projects from "./components/HomeComp/Projects/Projects";
 import AnimatedSlide from "./components/HomeComp/Projects/Swiper";
-// import TechStacks from "./components/TechStacks";
 import Articles from "./components/HomeComp/Articles";
 import TechStacks from "./components/TechStacks";
 
@@ -30,7 +29,7 @@ const Preloader = function () {
       >
         <GradientTxt
           tagName="h2"
-          txt="<ReactMode />"
+          txt="<Henrique Costa />"
           className="text-[22px] font-bold md:text-[36px] xl:text-[54px]"
         />
       </motion.div>
@@ -55,7 +54,6 @@ export default function ClientHome() {
       setIsLoading(false);
     }
 
-    // Clear preloader flag on page unload
     const handleBeforeUnload = () => {
       localStorage.removeItem("preloaderShown");
     };

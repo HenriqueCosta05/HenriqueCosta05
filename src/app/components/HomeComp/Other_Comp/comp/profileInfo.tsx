@@ -18,17 +18,18 @@ export default function ProfileInfo() {
       >
         <div>
           <GradientTxt
-            txt="FRONT-END DEVELOPER"
+            txt="FULL-STACK DEVELOPER"
             className="text-[22px] font-bold tracking-[4px]"
             tagName="h5"
           />
           <h2 className="mb-4 mt-2 text-[40px] font-bold leading-[120%] tracking-[0.5px] md:text-[54px]">
-            About me
+            Sobre mim
           </h2>
         </div>
         <p className="text-[19px] leading-[40px] text-[#666] md:text-[22px] lg:max-w-[50%]">
-          Over the past year, I've been developing robust solutions using technologies and frameworks, such
-          as React.js, React Native, VueJS and Angular. I am a passioned learner.
+          Olá! Meu nome é Henrique, sou um desenvolvedor full-stack de São Paulo, Brasil.
+          Eu crio aplicações web de alta qualidade para empresas e startups. Eu sou apaixonado
+          por tecnologia e estou sempre procurando aprender algo novo.
         </p>
       </FadeUp>
 

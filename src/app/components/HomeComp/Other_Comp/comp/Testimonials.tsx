@@ -47,11 +47,11 @@ export default function Testimonials() {
       <FadeUp tag="div">
         <GradientTxt
           tagName="h4"
-          txt="TESTIMONIALS"
+          txt="DEPOIMENTOS"
           className="mb-4 text-[22px] font-bold tracking-[4px]"
         />
         <p className="text-[36px] font-bold leading-[110%] tracking-[0.5px] md:text-[50px] xl:text-[54px]">
-          Word on the street
+          O que os clientes dizem
         </p>
       </FadeUp>
 

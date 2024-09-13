@@ -14,7 +14,7 @@ export default function Footer() {
             className="mb-4 text-center text-[22px] font-bold tracking-[4px]"
           />
           <h4 className="laeding-[120%] text-center text-[36px] font-bold tracking-[0.5px] text-white md:text-[50px] xl:text-[54px]">
-            Frequently Asked Questions
+            Perguntas Frequentes
           </h4>
         </FadeUp>
 

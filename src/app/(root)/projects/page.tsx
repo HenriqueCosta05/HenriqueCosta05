@@ -9,12 +9,12 @@ import Link from "next/link";
 import { toast } from "react-toastify";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Projetos",
   description:
-    "Explore my portfolio of projects, ranging from web development and programming to personal growth and industry trends. Stay informed and inspired with my latest work.",
+    "Explore meu portfólio de projetos, que variam de desenvolvimento web e programação a crescimento pessoal e tendências do setor. Mantenha-se informado e inspirado com meu trabalho mais recente.",
   openGraph: {
     description:
-      "Explore my portfolio of projects, ranging from web development and programming to personal growth and industry trends. Stay informed and inspired with my latest work.",
+      "Explore meu portfólio de projetos, que variam de desenvolvimento web e programação a crescimento pessoal e tendências do setor. Mantenha-se informado e inspirado com meu trabalho mais recente.",
   },
 };
 
@@ -55,7 +55,7 @@ export default async function Projects() {
                     {project.title}
                   </h2>
                   <CustomNav
-                    txt="View Project"
+                    txt="Ver Projeto"
                     className="flex items-center gap-2 text-sm text-white md:text-lg"
                   />
                 </div>

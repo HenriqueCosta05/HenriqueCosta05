@@ -68,7 +68,7 @@ export default async function ProjectDetails({ params }: Params) {
               // onClick={handleNextProjectNavigation}
             >
               <div className="group mx-auto mt-10 inline-flex cursor-pointer items-center justify-center gap-3 bg-gradient-to-r from-purple-400 via-red-500 to-orange-600 bg-clip-text pb-4 text-center text-[30px] font-bold leading-[110%] text-transparent md:text-[50px] xl:text-[54px]">
-                <h2>Next Project</h2>
+                <h2>Próximo projeto</h2>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"

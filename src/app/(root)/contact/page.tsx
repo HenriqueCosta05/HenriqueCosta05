@@ -2,12 +2,12 @@ import ClientContact from "./client/ClientContact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contato | Henrique Costa",
   description:
-    "Get in touch with me! Whether you have questions, want to discuss a project, or just want to connect, feel free to reach out. I'm always open to new opportunities and collaborations.",
+    "Entre em contato comigo! Se você tem perguntas, deseja discutir um projeto ou apenas se conectar, sinta-se à vontade para entrar em contato. Estou sempre aberto a novas oportunidades e colaborações.",
   openGraph: {
     description:
-      "Get in touch with me! Whether you have questions, want to discuss a project, or just want to connect, feel free to reach out. I'm always open to new opportunities and collaborations.",
+      "Entre em contato comigo! Se você tem perguntas, deseja discutir um projeto ou apenas se conectar, sinta-se à vontade para entrar em contato. Estou sempre aberto a novas oportunidades e colaborações.",
   },
 };
 

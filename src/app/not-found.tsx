@@ -13,12 +13,12 @@ export default function NotFound() {
           404
         </h2>
         <h2 className="mb-8 text-[30px] font-bold italic md:text-[76px]">
-          Page Not Found
+          Página não encontrada
         </h2>
         <p className="mb-8 text-center text-xl leading-[140%] text-[#152c5b]">
-          The page you're looking for doesn't exist or has been moved
+          A página que você está procurando não existe ou foi movida.
         </p>
-        <CustomBtn txt="Go back to home" className="w-[250px]" href="/" />
+        <CustomBtn txt="Voltar para a página inicial" className="w-[250px]" href="/" />
       </div>
       <Footer />
     </>

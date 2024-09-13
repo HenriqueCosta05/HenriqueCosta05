@@ -31,7 +31,7 @@ export default function EducationSect() {
     >
       <div className="xl:w-1/2">
         <div className="mb-10 text-[27px] font-bold md:text-[36px]">
-          📚 Education
+          📚 Formação
         </div>
 
         <div className="flex flex-col gap-10">
@@ -49,7 +49,7 @@ export default function EducationSect() {
 
       <div className="xl:w-1/2">
         <div className="mb-10 text-[27px] font-bold md:text-[36px]">
-          💼  Work Experience
+          💼 Experiência
         </div>
 
         <div className="flex flex-col gap-10">

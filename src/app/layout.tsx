@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_LIVE_URL as string),
   keywords: seoKeywords,
   title: {
-    default: "Home | <ReactMode />",
+    default: "Home | <Henrique Costa />",
     template: "%s | <ReactMode />",
   },
   description:
-    "Welcome to my professional portfolio repository! This project showcases my journey, skills, and projects as a fullstack developer. It serves as a central repository for all my work, experiences, and achievements in web development.",
+    "Seja bem-vindo ao meu portfólio profissional! Este projeto mostra minha jornada, habilidades e projetos como desenvolvedor fullstack. Ele serve como um repositório central para todo o meu trabalho, experiências e conquistas em desenvolvimento web.",
   openGraph: {
     description:
-      "Welcome to my professional portfolio repository! This project showcases my journey, skills, and projects as a fullstack developer. It serves as a central repository for all my work, experiences, and achievements in web development.",
+      "Seja bem-vindo ao meu portfólio profissional! Este projeto mostra minha jornada, habilidades e projetos como desenvolvedor fullstack. Ele serve como um repositório central para todo o meu trabalho, experiências e conquistas em desenvolvimento web.",
     images: [
       new URL("/opengraphImg.png", process.env.NEXT_PUBLIC_LIVE_URL as string)
         .href,

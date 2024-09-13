@@ -7,48 +7,43 @@ export default function ContactDetails() {
 
   const navLinks = [
     {
-      name: "About",
+      name: "Sobre mim",
       path: "/#about",
     },
 
     {
-      name: "Services",
+      name: "Serviços",
       path: "/#services",
     },
 
     {
-      name: "Experience",
+      name: "Experiência",
       path: "/#experience",
     },
 
     {
-      name: "Contact",
+      name: "Contato",
       path: "/contact",
     },
 
     {
-      name: "Articles",
+      name: "Artigos",
       path: "/articles",
     },
 
     {
-      name: "Projects",
+      name: "Projetos",
       path: "/projects",
     },
 
     {
       name: "Linkedin",
-      path: "https://www.linkedin.com/in/ayo540",
-    },
-
-    {
-      name: "Twitter",
-      path: "https://x.com/officialayo540",
+      path: "https://www.linkedin.com/in/henriquecosta05",
     },
 
     {
       name: "Github",
-      path: "https://github.com/abdullah43577",
+      path: "https://github.com/henriquecosta05",
     },
   ];
 
@@ -56,11 +51,11 @@ export default function ContactDetails() {
     <section className="pt-[80px] xl:pt-[300px]">
       <FadeUp tag="div" className="mb-8">
         <h2 className="text-[36px] font-bold tracking-[0.5px] text-white md:text-[50px] xl:text-[54px]">
-          Ready to create something amazing?
+          Pronto para começar?
         </h2>
         <GradientTxt
           tagName="h4"
-          txt="Let's hop on a call."
+          txt="Vamos agendar uma call."
           className="call sharedStyles cursor-pointer text-[30px] font-bold tracking-[0.5px] md:text-[50px] xl:text-[54px]"
         />
       </FadeUp>
@@ -68,10 +63,10 @@ export default function ContactDetails() {
       <div className="flex flex-col xl:flex-row xl:justify-between">
         <div>
           <h2 className="font-medium italic text-white sm:text-base md:text-[24px] lg:font-bold">
-            {" <React"}
-            <GradientTxt tagName="span" txt="Mode />." />
+            {" <Henrique "}
+            <GradientTxt tagName="span" txt="Costa />." />
           </h2>
-          <p className="py-2 text-[#8a95ad]">Lagos, Nigeria</p>
+          <p className="py-2 text-[#8a95ad]">São Paulo, SP</p>
           <div className="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,11 +79,11 @@ export default function ContactDetails() {
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
             </svg>
             <Link
-              href="mailto:officialayo540@gmail.com"
+              href="mailto:henriquebenedictocostadev@gmail.com"
               target="_blank"
               className="text-[17px] font-bold text-[#8a95ad]"
             >
-              officialayo540@gmail.com
+              henriquebenedictocostadev@gmail.com
             </Link>
           </div>
         </div>
@@ -109,9 +104,7 @@ export default function ContactDetails() {
 
       <p className="pb-10 pt-[100px] text-center text-[#8a95ad]">
         Copyright &copy; {date}{" "}
-        <GradientTxt tagName="span" txt="<ReactMode/>." /> all rights reserved.
-        Built using NextJS, Typescript, TailwindCSS, Framer motion, Sanity and
-        NodeJS.
+        <GradientTxt tagName="span" txt="<Henrique Costa/>." /> Todos os direitos reservados ao designer e desenvolvedor Abdullah.
       </p>
     </section>
   );
