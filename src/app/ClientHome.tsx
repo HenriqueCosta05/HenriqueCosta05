@@ -13,6 +13,7 @@ import Projects from "./components/HomeComp/Projects/Projects";
 import AnimatedSlide from "./components/HomeComp/Projects/Swiper";
 // import TechStacks from "./components/TechStacks";
 import Articles from "./components/HomeComp/Articles";
+import TechStacks from "./components/TechStacks";
 
 const Preloader = function () {
   return (
@@ -77,7 +78,7 @@ export default function ClientHome() {
             <div className="container mx-auto px-5 pt-5 lg:px-20">
               <Hero />
             </div>
-            {/* <TechStacks /> */}
+            <TechStacks />
             <div className="container mx-auto px-5 pt-5 lg:px-20">
               <Services />
               <Projects />

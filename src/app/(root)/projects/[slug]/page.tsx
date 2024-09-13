@@ -51,7 +51,7 @@ export default async function ProjectDetails({ params }: Params) {
 
           <div className="lg:max-w-[50%]">
             <h4 className="mb-3 text-[19px] font-bold leading-[110%] md:text-2xl">
-              Project Overview
+              Overview do Projeto
             </h4>
             <p className="md:text-lg">{project.description}</p>
           </div>

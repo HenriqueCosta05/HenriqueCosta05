@@ -19,8 +19,8 @@ export default function Header() {
               href="/"
               className="text-[15px] font-medium italic sm:text-base md:text-[24px] lg:font-bold"
             >
-              {"<React"}
-              <GradientTxt tagName="span" txt="Mode />." />
+              {"<Henrique"}
+              <GradientTxt tagName="span" txt=" Costa />." />
             </Link>
             <svg
               onClick={() => setIsNavClicked(!isNavClicked)}
@@ -40,31 +40,31 @@ export default function Header() {
                 href="/#about"
                 className="my-5 transition-opacity duration-75 hover:opacity-50"
               >
-                About
+                Sobre mim
               </Link>
               <Link
                 href="/#services"
                 className="my-5 transition-opacity duration-75 hover:opacity-50"
               >
-                Services
+                Serviços
               </Link>
               <Link
                 href="/projects"
                 className={`my-5 transition-opacity duration-75 ${pathname.includes("/projects") ? "opacity-50" : "hover:opacity-50"}`}
               >
-                Projects
+                Projetos
               </Link>
               <Link
                 href="/articles"
                 className={`my-5 transition-opacity duration-75 ${pathname.includes("/articles") ? "opacity-50" : "hover:opacity-50"}`}
               >
-                Articles
+                Artigos
               </Link>
               <Link
                 href="/contact"
                 className={`my-5 flex items-center gap-3 transition-opacity duration-75 ${pathname === "/contact" ? "opacity-50" : "hover:opacity-50"}`}
               >
-                <span>Book a call</span>
+                <span>Entre em contato!</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -104,35 +104,35 @@ export default function Header() {
                 className="my-5 transition-opacity duration-75 hover:opacity-50"
                 onClick={() => setIsNavClicked(false)}
               >
-                About
+                Sobre mim
               </Link>
               <Link
                 href="/#services"
                 className="my-5 transition-opacity duration-75 hover:opacity-50"
                 onClick={() => setIsNavClicked(false)}
               >
-                Services
+                Serviços
               </Link>
               <Link
                 href="/projects"
                 className={`my-5 transition-opacity duration-75 ${pathname.includes("projects") ? "opacity-50" : "hover:opacity-50"}`}
                 onClick={() => setIsNavClicked(false)}
               >
-                Projects
+                Projetos
               </Link>
               <Link
                 href="/articles"
                 className={`my-5 transition-opacity duration-75 ${pathname.includes("/articles") ? "opacity-50" : "hover:opacity-50"}`}
                 onClick={() => setIsNavClicked(false)}
               >
-                Articles
+                Artigos
               </Link>
               <Link
                 href="/contact"
                 className={`my-5 flex items-center gap-2 transition-opacity duration-75 ${pathname === "/contact" ? "opacity-50" : "hover:opacity-50"}`}
                 onClick={() => setIsNavClicked(false)}
               >
-                <span>Book a call</span>
+                <span>Entre em contato!</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

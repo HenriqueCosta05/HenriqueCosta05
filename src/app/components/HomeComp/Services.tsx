@@ -17,7 +17,7 @@ export default function Services() {
         const services = await getServices();
         setServices(services);
       } catch (error) {
-        toast.error("Failed to fetch services. Please try again later.");
+        toast.error("Ocorreu um erro ao resgatar os serviços.");
       }
     };
 
@@ -29,11 +29,11 @@ export default function Services() {
       <FadeUp tag="div" className="mb-16">
         <GradientTxt
           tagName="h6"
-          txt="SERVICES"
+          txt="Serviços Oferecidos"
           className="mb-4 text-center text-[22px] font-bold"
         />
         <h2 className="mx-auto mb-10 max-w-[800px] text-center text-[36px] font-bold leading-[120%] tracking-[0.5px] lg:text-[54px]">
-          Code that solves problems, one product at a time.
+          Como posso ajudar você?
         </h2>
       </FadeUp>
 

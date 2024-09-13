@@ -19,17 +19,17 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="mb-4 text-[40px] font-bold leading-[110%] md:text-[68px] lg:text-[70px]">
-          <GradientTxt tagName="span" txt="I develop fullstack" /> solutions
-          that delight and inspire users.
+          <GradientTxt tagName="span" txt="Eu desenvolvo " /> soluções full-stack
+          que impulsionam o seu negócio.
         </h1>
 
         <p className="mb-16 text-[19px] text-[#666] lg:text-[22px]">
-          Hi! I'm Abdullah, a Fullstack Web Developer based in Nigeria. I create
-          user-friendly interfaces for fast-growing startups.
+          Olá! Sou Henrique, um desenvolvedor full-stack de São Paulo, Brasil. Eu crio
+          aplicações web de alta qualidade para empresas e startups. 
         </p>
 
         <div className="mb-16 flex flex-col gap-4 md:flex-row xl:items-center">
-          <CustomBtn txt="Book a call" className="w-[150px]" href="/contact" />
+          <CustomBtn txt="Entre em contato!" className="w-[180px]" href="/contact" />
           <Link
             href={resume}
             target="_blank"
@@ -37,7 +37,7 @@ export default function Hero() {
             download="Henrique_Costa_Desenvolvedor_Front-End.pdf"
             className="group flex cursor-pointer items-center gap-2 text-lg font-bold"
           >
-            <span>Download CV</span>
+            <span>Baixe meu CV</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

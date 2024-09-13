@@ -12,17 +12,17 @@ export default function Projects() {
         <div>
           <GradientTxt
             tagName="h6"
-            txt="PROJECTS"
+            txt="Projetos"
             className="mb-4 text-center text-[22px] font-bold"
           />
           <h2 className="mx-auto mb-10 max-w-[600px] text-[36px] font-bold leading-[120%] tracking-[0.5px] lg:text-[54px]">
-            Innovative side projects
+            Projetos que já participei ativamente
           </h2>
         </div>
 
         <CustomBtn
-          txt="View all projects"
-          className="w-[200px]"
+          txt="Visualizar todos os projetos"
+          className="w-[245px]"
           href="/projects"
         />
       </FadeUp>

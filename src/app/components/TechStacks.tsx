@@ -28,7 +28,7 @@ export default function TechStacks() {
         const stacks = await getTechStacks();
         setTechStacks(stacks);
       } catch (error) {
-        toast.error("Failed to fetch techstacks. Please try again later.");
+        toast.error("Erro ao recuperar tecnologias, recarregue a página ou tente novamente mais tarde.");
       }
     };
     getStacks();
@@ -36,7 +36,7 @@ export default function TechStacks() {
 
   return (
     <section className="mb-[108px]">
-      <h2 className="text-center text-sm md:text-lg">Technologies I use</h2>
+      <h2 className="text-center text-sm md:text-lg">Tecnologias que utilizo no meu dia a dia: </h2>
       <div className="relative mt-10 overflow-hidden">
         <div className="glassmorphism absolute -left-2 z-10 h-full w-[20px] lg:w-[30px] xl:w-[40px]" />
         <div className="glassmorphism absolute -right-2 z-10 h-full w-[20px] lg:w-[30px] xl:w-[40px]" />
@@ -48,14 +48,6 @@ export default function TechStacks() {
           {techStacks.map((tech, index) => (
             <span
               key={index}
-              className="dancingScript mx-4 text-xl font-bold tracking-[4px] text-gray-600 md:text-2xl"
-            >
-              {tech}
-            </span>
-          ))}
-          {techStacks.map((tech, index) => (
-            <span
-              key={`duplicate-${index}`}
               className="dancingScript mx-4 text-xl font-bold tracking-[4px] text-gray-600 md:text-2xl"
             >
               {tech}
