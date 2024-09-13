@@ -1,10 +1,10 @@
 import imageUrlBuilder from "@sanity/image-url";
-import { apiVersion, dataset, projectId } from "../environment/environment";
 
 export const clientConfig = {
-  projectId: projectId,
-  dataset: dataset,
-  apiVersion: apiVersion,
+  projectId: 'fmcssjtc',
+  dataset: 'production',
+  title: 'Henrique Costa Portfolio Website',
+  apiVersion: '2021-03-25',
   useCdn: true,
 };
 

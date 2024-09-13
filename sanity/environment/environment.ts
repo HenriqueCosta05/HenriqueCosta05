@@ -1,3 +1,3 @@
-export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID as string;
-export const dataset = process.env.NEXT_PUBLIC_SANITY_PROJECT_DATASET as string;
-export const apiVersion = process.env.NEXT_PUBLIC_SANITY_PROJECT_API_VERSION as string;
+export const projectId = "fmcssjtc"
+export const dataset = "production"
+export const apiVersion = "2021-03-25";
