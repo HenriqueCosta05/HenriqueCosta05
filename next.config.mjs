@@ -30,8 +30,7 @@ const nextConfig = {
           },
           {
             key: "Access-Control-Allow-Origin",
-            value:
-              "https://fmcssjtc.apicdn.sanity.io/v2021-03-25/data/query/production",
+            value: "https://henrique-costa05.vercel.app/",
           },
           {
             key: "Access-Control-Allow-Methods",
