@@ -14,7 +14,6 @@ export default function ClientContact() {
     firstName: "",
     lastName: "",
     email: "",
-    budget: "",
     message: "",
   });
   const [isSending, setIsSending] = useState(false);
@@ -22,11 +21,6 @@ export default function ClientContact() {
   const handleFormUpdate = function (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSelectedPricing = function (e: ChangeEvent<HTMLSelectElement>) {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -54,13 +48,12 @@ export default function ClientContact() {
         firstName: "",
         lastName: "",
         email: "",
-        budget: "",
         message: "",
       });
       setIsSending(false);
     } catch (error) {
       setIsSending(false);
-      toast.error("Error sending message, please try again!");
+      toast.error("Erro ao enviar mensagem, favor, tente novamente!");
     }
   };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: seoKeywords,
   title: {
     default: "Home | <Henrique Costa />",
-    template: "%s | <ReactMode />",
+    template: "%s | <Henrique Costa />",
   },
   description:
     "Seja bem-vindo ao meu portfólio profissional! Este projeto mostra minha jornada, habilidades e projetos como desenvolvedor fullstack. Ele serve como um repositório central para todo o meu trabalho, experiências e conquistas em desenvolvimento web.",
