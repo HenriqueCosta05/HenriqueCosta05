@@ -6,7 +6,7 @@ import profImg from "../../../public/img2.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import resume from "../../../public/Henrique_Costa_Desenvolvedor_Front-End.pdf";
+import resume from "../../../public/CV - Henrique Benedicto Costa.pdf";
 
 export default function Hero() {
   const MotionImage = motion(Image);
@@ -34,7 +34,7 @@ export default function Hero() {
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
-            download="Henrique_Costa_Desenvolvedor_Front-End.pdf"
+            download="CV-Henrique-Benedicto-Costa.pdf"
             className="group flex cursor-pointer items-center gap-2 text-lg font-bold"
           >
             <span>Baixe meu CV</span>

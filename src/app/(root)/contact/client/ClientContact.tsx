@@ -31,9 +31,9 @@ export default function ClientContact() {
 
     try {
       setIsSending(true);
-      toast.info("Sending message, please wait...");
+      toast.info("Enviando mensagem! Por favor, aguarde alguns instantes...");
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_ENDPOINT}/sendMail`,
+        `https://formsubmit.co/henriquebenedictocostadev@gmail.com`,
         {
           method: "POST",
           headers: {
@@ -101,6 +101,7 @@ export default function ClientContact() {
 
         <form
           onSubmit={(e) => handleFormSubmit(e)}
+          method="POST"
           className="max-w-[655px] xl:w-[60%]"
         >
           <div className="mb-6 flex flex-col gap-4 md:flex-row">
