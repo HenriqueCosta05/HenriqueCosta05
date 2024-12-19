@@ -2,11 +2,11 @@
 
 import CustomBtn from "./Reusables/CustomBtn";
 import GradientTxt from "./Reusables/GradientTxt";
-import profImg from "../../../public/img2.jpg";
+import profImg from "../../../public/img5.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import resume from "../../../public/CV - Henrique Benedicto Costa.pdf";
+import resume from "../../../public/CV - Henrique Costa.pdf";
 
 export default function Hero() {
   const MotionImage = motion(Image);
@@ -19,12 +19,12 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="mb-4 text-[40px] font-bold leading-[110%] md:text-[68px] lg:text-[70px]">
-          <GradientTxt tagName="span" txt="Eu desenvolvo " /> soluções full-stack
+          <GradientTxt tagName="span" txt="Eu desenvolvo " /> soluções
           que impulsionam o seu negócio.
         </h1>
 
         <p className="mb-16 text-[19px] text-[#666] lg:text-[22px]">
-          Olá! Sou Henrique, um desenvolvedor full-stack de São Paulo, Brasil. Eu crio
+          Olá! Sou Henrique, um desenvolvedor Front-end de São Paulo, Brasil. Eu crio
           aplicações web de alta qualidade para empresas e startups. 
         </p>
 
@@ -34,7 +34,7 @@ export default function Hero() {
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
-            download="CV-Henrique-Benedicto-Costa.pdf"
+            download="CV-Henrique-Costa.pdf"
             className="group flex cursor-pointer items-center gap-2 text-lg font-bold"
           >
             <span>Baixe meu CV</span>
