@@ -10,8 +10,8 @@ I am a front-end developer specializing in real-world projects, leveraging popul
 
 # 📊 GitHub Stats:
 <div style="display: flex; ">
-<img width="300" style="margin-right: 8px" src="https://github-readme-streak-stats.herokuapp.com/?user=HenriqueCosta05&theme=prussian&hide_border=false"/>
-<img width="275" src="https://github-readme-stats.vercel.app/api?username=HenriqueCosta05&theme=prussian&hide_border=false&include_all_commits=false&count_private=true">
+<img width="500" style="margin-right: 8px" src="https://github-readme-streak-stats.herokuapp.com/?user=HenriqueCosta05&theme=prussian&hide_border=false"/>
+<img width="500" src="https://github-readme-stats.vercel.app/api?username=HenriqueCosta05&theme=prussian&hide_border=false&include_all_commits=false&count_private=true">
 
 </div>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=henriquecosta05&layout=pie&theme=prussian" width="300" style="margin-top: 10px;"/>
