@@ -56,7 +56,7 @@ export const StyledDesktopMenu = styled.div`
 
 export const StyledNavLink = styled(Link, {
     shouldForwardProp: (prop) => prop !== '$isActive'
-})<{ $isActive?: boolean }>`
+}) <{ $isActive?: boolean }>`
     margin: 20px 0;
     transition: opacity 0.075s;
     text-decoration: none;
@@ -104,7 +104,7 @@ export const StyledMobileMenuContent = styled.div`
 
 export const StyledMobileNavLink = styled(Link, {
     shouldForwardProp: (prop) => prop !== '$isActive'
-})<{ $isActive?: boolean }>`
+}) <{ $isActive?: boolean }>`
     margin: 20px 0;
     transition: opacity 0.075s;
     text-decoration: none;

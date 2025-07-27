@@ -1,0 +1,11 @@
+{
+    "navbar": {
+        "logo": "Henrique Costa",
+        "menu": {
+            "experience": "Experience",
+            "projects": "Projects",
+            "articles": "Articles",
+            "contact": "Contact me!"
+        }
+    }
+}
