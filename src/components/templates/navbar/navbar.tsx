@@ -19,10 +19,13 @@ import {
     StyledMobileNavLink,
     StyledMobileContactLink
 } from "./navbar.styles";
+import { useTranslations } from "next-intl";
 
 const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProps) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
+
+    const t = useTranslations("navbar");
 
     const handleMenuToggle = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -60,19 +63,19 @@ const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProp
                                 href="/projects"
                                 $isActive={pathname.includes("/projects")}
                             >
-                                Projetos
+                                {t("menu.projects")}
                             </StyledNavLink>
                             <StyledNavLink
                                 href="/articles"
                                 $isActive={pathname.includes("/articles")}
                             >
-                                Artigos
+                                {t("menu.articles")}
                             </StyledNavLink>
                             <StyledContactLink
                                 href="/contact"
                                 $isActive={pathname === "/contact"}
                             >
-                                <span>Entre em contato!</span>
+                                <span>{t("menu.contact")}</span>
                                 <StyledArrowIcon
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
@@ -106,28 +109,28 @@ const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProp
                                 $isActive={pathname.includes("/experience")}
                                 onClick={handleMobileLinkClick}
                             >
-                                Experiência
+                                {t("menu.experience")}
                             </StyledMobileNavLink>
                             <StyledMobileNavLink
                                 href="/projects"
                                 $isActive={pathname.includes("/projects")}
                                 onClick={handleMobileLinkClick}
                             >
-                                Projetos
+                                {t("menu.projects")}
                             </StyledMobileNavLink>
                             <StyledMobileNavLink
                                 href="/articles"
                                 $isActive={pathname.includes("/articles")}
                                 onClick={handleMobileLinkClick}
                             >
-                                Artigos
+                                {t("menu.articles")}
                             </StyledMobileNavLink>
                             <StyledMobileContactLink
                                 href="/contact"
                                 $isActive={pathname === "/contact"}
                                 onClick={handleMobileLinkClick}
                             >
-                                <span>Entre em contato!</span>
+                                <span>{t("menu.contact")}</span>
                                 <StyledArrowIcon
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
