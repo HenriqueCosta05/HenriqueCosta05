@@ -7,5 +7,15 @@
             "articles": "Articles",
             "contact": "Contact me!"
         }
+    },
+    "hero": {
+        "description": "A passionate software engineer with a focus on web development.",
+        "image": "/profile_image.jpg",
+        "resumeUrl": "/CV - Henrique Costa.pdf",
+        "headerHighlight": "I develop",
+        "header": "solutions that boost your business.",
+        "cta": "Download my CV!",
+        "contactHref": "/contact",
+        "downloadResume": "Download CV"
     }
 }

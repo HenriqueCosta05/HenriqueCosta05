@@ -1,6 +1,6 @@
 "use client";
 
-import { HeroProps } from "./hero.interface";
+import { useTranslations } from "next-intl";
 import {
     StyledHeroSection,
     StyledHeroContent,
@@ -8,19 +8,14 @@ import {
     StyledGradientText,
     StyledHeroDescription,
     StyledActionContainer,
-    StyledCustomButton,
     StyledDownloadLink,
     StyledArrowIcon,
     StyledProfileImage
 } from "./hero.styles";
+import CustomBtn from "@/components/base/button/button";
 
-const Hero = ({
-    title = "soluções que impulsionam o seu negócio.",
-    subtitle = "Olá! Sou Henrique, desenvolvedor Front-end. Eu crio aplicações web de alta qualidade e desempenho.",
-    resumeUrl = "/CV - Henrique Costa.pdf",
-    contactHref = "/contact"
-}: HeroProps) => {
-    const profileImageSrc = "/profile_image.jpg"; 
+const Hero = () => {
+    const t = useTranslations("hero");
     return (
         <StyledHeroSection>
             <StyledHeroContent
@@ -29,26 +24,26 @@ const Hero = ({
                 transition={{ duration: 0.5 }}
             >
                 <StyledHeroTitle>
-                    <StyledGradientText>Eu desenvolvo </StyledGradientText>
-                    {title}
+                    <StyledGradientText>{t("headerHighlight")}</StyledGradientText>
+                    {" "}{t("header")}
                 </StyledHeroTitle>
 
                 <StyledHeroDescription>
-                    {subtitle}
+                    {t("description")}
                 </StyledHeroDescription>
 
                 <StyledActionContainer>
-                    <StyledCustomButton href={contactHref}>
-                        Entre em contato!
-                    </StyledCustomButton>
-
+                    <CustomBtn
+                        txt={t("cta")}
+                        href={t("contactHref")}
+                    />
                     <StyledDownloadLink
-                        href={resumeUrl}
+                        href={t("resumeUrl")}
                         target="_blank"
                         rel="noopener noreferrer"
                         download="CV-Henrique-Costa.pdf"
                     >
-                        <span>Baixe meu CV</span>
+                        <span>{t("downloadResume")}</span>
                         <StyledArrowIcon
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -64,13 +59,11 @@ const Hero = ({
             </StyledHeroContent>
 
             <StyledProfileImage
-                initial={{ scale: 1.2 }}
-                animate={{ scale: 1 }}
+                initial={{ visibility: "hidden", scale: 0.5 }}
+                animate={{ scale: 1, visibility: "visible" }}
                 transition={{ duration: 0.5 }}
-                src={profileImageSrc}
+                src={t("image")}
                 alt="profile image"
-                priority
-                
             />
         </StyledHeroSection>
     );

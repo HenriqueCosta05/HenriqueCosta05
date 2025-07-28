@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Logo from "../logo/logo";
 import { NavbarProps } from "./navbar.interface";
@@ -20,6 +20,9 @@ import {
     StyledMobileContactLink
 } from "./navbar.styles";
 import { useTranslations } from "next-intl";
+import { Selector } from "@/components/base";
+import { SvgIcon } from "@mui/material";
+import { getUserLocale, setUserLocale } from "@/services";
 
 const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProps) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,6 +37,21 @@ const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProp
     const handleMobileLinkClick = () => {
         setIsMenuOpen(false);
     };
+
+    const handleSwitchLanguage = async(newLocale: string) => {
+        await setUserLocale(newLocale);
+        setIsMenuOpen(false);
+    };
+
+    const [currentLocale, setCurrentLocale] = useState<string>("en-US");
+
+    useEffect(() => {
+        const fetchLocale = async () => {
+            const locale = await getUserLocale();
+            setCurrentLocale(locale || "en-US");
+        };
+        fetchLocale();
+    }, []);
 
     return (
         <StyledHeader>
@@ -60,6 +78,12 @@ const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProp
 
                         <StyledDesktopMenu>
                             <StyledNavLink
+                                href="/experience"
+                                $isActive={pathname.includes("/experience")}
+                            >
+                                {t("menu.experience")}
+                            </StyledNavLink>
+                            <StyledNavLink
                                 href="/projects"
                                 $isActive={pathname.includes("/projects")}
                             >
@@ -71,6 +95,54 @@ const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProp
                             >
                                 {t("menu.articles")}
                             </StyledNavLink>
+                            <Selector
+                                options={[
+                                    {
+                                        value: "en-US",
+                                        label: "English",
+                                        icon: (
+                                            <SvgIcon
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                                                <path d="M12 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 4c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
+                                            </SvgIcon>
+                                        )
+                                    },
+                                    {
+                                        value: "pt-BR",
+                                        label: "Português",
+                                        icon: (
+                                            <SvgIcon
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                                                <path d="M12 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 4c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
+                                            </SvgIcon>
+                                        )
+                                    },
+                                    {
+                                        value: "es-ES",
+                                        label: "Español",
+                                        icon: (
+                                            <SvgIcon
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                                                <path d="M12 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 4c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
+                                            </SvgIcon>
+                                        )
+                                    }
+                                ]}
+                                selectedOption={currentLocale}
+                                onChange={handleSwitchLanguage}
+                            />
                             <StyledContactLink
                                 href="/contact"
                                 $isActive={pathname === "/contact"}
@@ -142,6 +214,52 @@ const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProp
                                     />
                                 </StyledArrowIcon>
                             </StyledMobileContactLink>
+                            <Selector
+                                options={[
+                                    {
+                                        value: "en",
+                                        label: "English",
+                                        icon: (
+                                            <SvgIcon
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                                                <path d="M12 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 4c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
+                                            </SvgIcon>
+                                        )
+                                    },
+                                    {
+                                        value: "pt",
+                                        label: "Português",
+                                        icon: (
+                                            <SvgIcon
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                                            </SvgIcon>
+                                        )
+                                    },
+                                    {
+                                        value: "es",
+                                        label: "Español",
+                                        icon: (
+                                            <SvgIcon
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                                            </SvgIcon>
+                                        )
+                                    },
+                                ]}
+                                selectedOption={currentLocale}
+                                onChange={handleSwitchLanguage}
+                            />
                         </StyledMobileMenuContent>
                     </StyledMobileMenu>
                 </StyledNav>

@@ -7,5 +7,15 @@
             "articles": "Artículos",
             "contact": "¡Contáctame!"
         }
+    },
+    "hero": {
+        "image": "/profile_image.jpg",
+        "resumeUrl": "/CV - Henrique Costa.pdf",
+        "headerHighlight": "Yo desarrollo",
+        "header": "soluciones que impulsan tu negocio.",
+        "description": "Hola, soy Henrique Costa, ingeniero de software con enfoque en desarrollo web.",
+        "contactHref": "/contact",
+        "cta": "¡Contáctame!",
+        "downloadResume": "Descargar CV"
     }
 }

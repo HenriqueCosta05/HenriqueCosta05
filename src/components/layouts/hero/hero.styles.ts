@@ -14,6 +14,7 @@ export const StyledHeroSection = styled.section`
 `;
 
 export const StyledHeroContent = styled(motion.div)`
+    max-width: 876px;
 `;
 
 export const StyledHeroTitle = styled.h1`
@@ -113,7 +114,10 @@ export const StyledProfileImage = styled(motion.img)`
     margin: 0 auto;
     width: 100%;
     border-radius: 50%;
-
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    
     @media (min-width: 1024px) {
         width: 500px;
     }

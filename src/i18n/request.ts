@@ -1,8 +1,8 @@
 import { getRequestConfig } from 'next-intl/server';
+import { getUserLocale } from '@/services';
 
 export default getRequestConfig(async () => {
-    const supportedLocales = ['en-US', 'es-ES', 'pt-BR'];
-    const locale = navigator.language || 'en';
+    const locale = await getUserLocale() || 'en-US';
 
     return {
         locale,

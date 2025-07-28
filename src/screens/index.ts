@@ -1,0 +1,2 @@
+export * from "@/screens/Homepage/Homepage";
+export { default as HomepageScreen } from "@/screens/Homepage/Homepage";

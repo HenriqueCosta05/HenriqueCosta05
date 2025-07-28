@@ -1,13 +1,5 @@
-'use client';
-
-import { Hero } from "@/components/layouts";
-import { Navbar } from "@/components/templates";
+import { HomepageScreen } from "@/screens";
 
 export default function Home() {
-  return (
-    <main>
-      <Navbar logoText="Henrique" highlightedText="Costa" />
-      <Hero />
-    </main>
-  );
+  return <HomepageScreen />;
 }
