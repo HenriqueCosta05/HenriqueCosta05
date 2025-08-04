@@ -11,9 +11,9 @@
     "hero": {
         "image": "/profile_image.jpg",
         "resumeUrl": "/CV - Henrique Costa.pdf",
-        "headerHighlight": "Yo desarrollo",
-        "header": "soluciones que impulsan tu negocio.",
-        "description": "Hola, soy Henrique Costa, ingeniero de software con enfoque en desarrollo web.",
+        "headerHighlight": "Ingeniero de Sistemas",
+        "header": "Front-End",
+        "description": "Soy ingeniero de software front-end, especializado en desarrollar soluciones de alta calidad. Trabajo con React, TypeScript, JavaScript, HTML, CSS y herramientas como Next.js, Tailwind y Git. Siempre busco ofrecer rendimiento, accesibilidad y una buena experiencia de usuario.",
         "contactHref": "/contact",
         "cta": "¡Contáctame!",
         "downloadResume": "Descargar CV"

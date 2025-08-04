@@ -31,4 +31,5 @@ export const StyledMotionButton = styled(motion.button)`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 `;

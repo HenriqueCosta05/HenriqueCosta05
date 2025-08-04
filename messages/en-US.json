@@ -9,11 +9,11 @@
         }
     },
     "hero": {
-        "description": "A passionate software engineer with a focus on web development.",
+        "description": "I'm a front-end software engineer, specialized in crafting high-quality solutions. I work with React, TypeScript, JavaScript, HTML, CSS, and tools like Next.js, Tailwind, and Git. I always strive to deliver performance, accessibility, and a great user experience.",
         "image": "/profile_image.jpg",
         "resumeUrl": "/CV - Henrique Costa.pdf",
-        "headerHighlight": "I develop",
-        "header": "solutions that boost your business.",
+        "headerHighlight": "Front-End",
+        "header": "Software Engineer",
         "cta": "Download my CV!",
         "contactHref": "/contact",
         "downloadResume": "Download CV"

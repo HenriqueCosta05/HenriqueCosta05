@@ -3,7 +3,7 @@
 import { CustomBtnProps } from "./button.interface";
 import { StyledLink, ButtonContainer, StyledMotionButton } from "./button.styles";
 
-export default function CustomBtn({ className, txt, href }: CustomBtnProps) {
+export default function Button ({ className, txt, href }: CustomBtnProps) {
     return (
         <StyledLink href={href}>
             <ButtonContainer>
