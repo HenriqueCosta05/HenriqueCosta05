@@ -3,7 +3,7 @@ import { CardProps } from "./card.interface";
 import * as S from "./card.style";
 
 export default function Card(Props: CardProps) {
-    const { image, title, subtitle, description, flags, cta} = Props;
+    const { image, title, subtitle, endSubtitle, description, flags, cta} = Props;
     return (
         <S.StyledCardWrapper>
             {image && (
@@ -13,12 +13,15 @@ export default function Card(Props: CardProps) {
             )}
             <S.StyledCardContent>
                 <S.StyledCardTitle>{title}</S.StyledCardTitle>
-                <S.StyledCardSubtitle>{subtitle}</S.StyledCardSubtitle>
+                <S.StyledCardSubtitleWrapper>
+                    <S.StyledCardSubtitle>{subtitle}</S.StyledCardSubtitle>
+                    <S.StyledCardSubtitle>{endSubtitle}</S.StyledCardSubtitle>
+                </S.StyledCardSubtitleWrapper>
                 <S.StyledCardDescription>{description}</S.StyledCardDescription>
-                {flags && (
+                {flags && typeof flags === "object" && (
                     <S.StyledCardFlags>
-                        {flags.map(flag => (
-                            <S.StyledCardFlag $hovered={false} key={flag.name}>{flag.name}</S.StyledCardFlag>
+                        {Object.values(flags).map((flag, index) => (
+                            <S.StyledCardFlag $hovered={flag.hovered} key={index}>{flag.name}</S.StyledCardFlag>
                         ))}
                     </S.StyledCardFlags>
                 )}

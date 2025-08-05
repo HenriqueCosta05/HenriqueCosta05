@@ -17,5 +17,29 @@
         "cta": "Download my CV!",
         "contactHref": "/contact",
         "downloadResume": "Download CV"
+    },
+    "experience": {
+        "title": "Experience",
+        "description": "Check out my professional journey and the skills I've developed along the way.",
+        "list": [
+            {
+                "role": "Front-End Development Intern",
+                "company": "Olos Tecnologia",
+                "duration": "Dec. 2024 - Present",
+                "shortDescription": "I collaborate with front-end developers in creating and maintaining web applications, using modern technologies like React, Next, Material UI, Styled Components, Redux, and TypeScript, converting Figma prototypes into clean and responsive code, which increased end-user productivity.",
+                "technologies": {
+                    "0": { "name": "React", "hovered": true },
+                    "1": { "name": "Next.js" },
+                    "2": { "name": "TypeScript" },
+                    "3": { "name": "Material UI" },
+                    "4": { "name": "Styled Components" },
+                    "5": { "name": "Redux" }
+                },
+                "cta": {
+                    "text": "Learn more",
+                    "href": "/experience/olos-tecnologia"
+                }
+            }
+        ]
     }
 }

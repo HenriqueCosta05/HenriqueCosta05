@@ -17,5 +17,29 @@
         "description": "Sou engenheiro de software front-end, especializado em elaborar soluções de alta qualidade. Trabalho com React, TypeScript, JavaScript, HTML, CSS e ferramentas como Next.js, Tailwind e Git. Busco sempre entregar performance, acessibilidade e boa experiência ao usuário.",
         "cta": "Entre em contato!",
         "downloadResume": "Baixe meu CV"
+    },
+    "experience": {
+        "title": "Experiência",
+        "description": "Confira minha jornada profissional e as habilidades que desenvolvi ao longo do caminho.",
+        "list": [
+            {
+                "role": "Estagiário de Desenvolvimento Front-End",
+                "company": "Olos Tecnologia",
+                "duration": "Dez. 2024 - Atual",
+                "shortDescription": "Colaboro com desenvolvedores front-end na criação e manutenção de aplicações web, utilizando tecnologias modernas como React, Next, Material UI, Styled Components, Redux e TypeScript, convertendo protótipos do Figma em código limpo e responsivo, o que aumentou a produtividade dos usuários finais.",
+                    "technologies": {
+                        "0": { "name": "React", "hovered": true },
+                        "1": { "name": "Next.js" },
+                        "2": { "name": "TypeScript" },
+                        "3": { "name": "Material UI" },
+                        "4": { "name": "Styled Components" },
+                        "5": { "name": "Redux" }
+                    },
+                "cta": {
+                    "text": "Saiba mais",
+                    "href": "/experience/olos-tecnologia"
+                }
+            }
+        ]
     }
 }

@@ -15,6 +15,7 @@ export const StyledCardWrapper = styled(motion.section)`
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         border-color: rgba(0, 0, 0, 0.2);
     }
+    width: 100%;
 `;
 
 export const StyledCardImage = styled.div`
@@ -41,6 +42,7 @@ export const StyledCardContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
+    
 `;
 
 export const StyledCardTitle = styled.h3`
@@ -49,14 +51,23 @@ export const StyledCardTitle = styled.h3`
     color: #333;
     margin: 0;
     line-height: 1.3;
-    background: linear-gradient(135deg, var(--primary, #b16cea), var(--secondary, #ff5e69));
+    background: linear-gradient(to right, #c084fc, #ef4444, #ea580c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 `;
 
+export const StyledCardSubtitleWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 4px;
+`;
+
 export const StyledCardSubtitle = styled.h4`
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #666;
     margin: 0;

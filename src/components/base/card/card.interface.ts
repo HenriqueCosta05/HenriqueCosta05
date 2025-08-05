@@ -16,6 +16,7 @@ type CardCTA = {
 export interface CardProps {
     title: string;
     subtitle?: string;
+    endSubtitle?: string;
     description?: string;
     flags?: CardFlag[];
     image?: CardImage;

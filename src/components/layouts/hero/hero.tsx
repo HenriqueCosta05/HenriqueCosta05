@@ -12,8 +12,7 @@ import {
     StyledArrowIcon,
     StyledProfileImage
 } from "./hero.styles";
-import CustomBtn from "@/components/base/button/button";
-import { Card } from "@/components/base";
+import { Button } from "@/components/base";
 
 const Hero = () => {
     const t = useTranslations("hero");
@@ -34,7 +33,7 @@ const Hero = () => {
                 </StyledHeroDescription>
 
                 <StyledActionContainer>
-                    <CustomBtn
+                    <Button
                         txt={t("cta")}
                         href={t("contactHref")}
                     />
