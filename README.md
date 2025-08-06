@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Hi 👋, I'm Henrique Costa</h1>
+<h3 align="center">A passionate fullstack developer from Brazil 🇧🇷</h3>
 
-## Getting Started
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=henriquecosta05&label=Profile%20views&color=0e75b6&style=flat" alt="henriquecosta05" />
+</p>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🔗 Connect with me
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="left">
+  <a href="https://linkedin.com/in/henriquecosta05" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+  </a>
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📊 GitHub Stats
 
-## Learn More
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=henriquecosta05&show_icons=true&locale=en" alt="henriquecosta05" />
+</p>
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 My Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🖥️ Front-End
+![Tech Stack](https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,angular,redux,tailwind,sass,styledcomponents,materialui,vite,vitest,tauri&theme=dark&perline=7)
 
-## Deploy on Vercel
+### 🔧 Back-End
+![Back-End](https://skillicons.dev/icons?i=nodejs,nestjs,express,prisma&theme=dark&perline=7)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🗄️ Databases
+![Databases](https://skillicons.dev/icons?i=postgres,mongodb,mysql&theme=dark&perline=7)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ⚙️ DevOps & Tools
+![DevOps](https://skillicons.dev/icons?i=docker,linux,ubuntu,windows,github,githubactions,git,npm,yarn,bash&theme=dark&perline=7)
+
+### 🧪 Testing & QA
+![Testing](https://skillicons.dev/icons?i=cypress&theme=dark&perline=7)
+
+### 🎨 Design
+![Design](https://skillicons.dev/icons?i=figma&theme=dark&perline=7)
+
+### 🧩 Other Tools & Frameworks
+![Other](https://skillicons.dev/icons?i=electron,mint&theme=dark&perline=7)
+
+---
+
+📫 **Feel free to connect or reach out — I'm always up for collaboration and exciting new projects!**
