@@ -25,10 +25,12 @@ export default function Card(Props: CardProps) {
                         ))}
                     </S.StyledCardFlags>
                 )}
+                <S.StyledCardRow>
                 <Button
                     href={cta?.to || "/"}
                     txt={cta?.title || ""}
-                />
+                    />
+                </S.StyledCardRow>
             </S.StyledCardContent>
         </S.StyledCardWrapper>
     );

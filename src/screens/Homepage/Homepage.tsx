@@ -1,6 +1,6 @@
 "use client";
 
-import { Experience, Hero } from "@/components/layouts";
+import { Experience, Hero, Projects } from "@/components/layouts";
 import { Navbar } from "@/components/templates";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <Navbar logoText="Henrique" highlightedText="Costa" />
       <Hero />
       <Experience />
+      <Projects />
     </main>
   );
 }

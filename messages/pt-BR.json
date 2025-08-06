@@ -1,45 +1,124 @@
 {
-    "navbar": {
-        "logo": "Henrique Costa",
-        "menu": {
-            "experience": "Experiência",
-            "projects": "Projetos",
-            "articles": "Artigos",
-            "contact": "Entre em contato!"
-        }
-    },
-    "hero": {
-        "image": "/profile_image.jpg",
-        "resumeUrl": "/CV - Henrique Costa.pdf",
-        "headerHighlight": "Engenheiro de Software",
-        "header": "Front-End",
-        "contactHref": "/contact",
-        "description": "Sou engenheiro de software front-end, especializado em elaborar soluções de alta qualidade. Trabalho com React, TypeScript, JavaScript, HTML, CSS e ferramentas como Next.js, Tailwind e Git. Busco sempre entregar performance, acessibilidade e boa experiência ao usuário.",
-        "cta": "Entre em contato!",
-        "downloadResume": "Baixe meu CV"
-    },
-    "experience": {
-        "title": "Experiência",
-        "description": "Confira minha jornada profissional e as habilidades que desenvolvi ao longo do caminho.",
-        "list": [
-            {
-                "role": "Estagiário de Desenvolvimento Front-End",
-                "company": "Olos Tecnologia",
-                "duration": "Dez. 2024 - Atual",
-                "shortDescription": "Colaboro com desenvolvedores front-end na criação e manutenção de aplicações web, utilizando tecnologias modernas como React, Next, Material UI, Styled Components, Redux e TypeScript, convertendo protótipos do Figma em código limpo e responsivo, o que aumentou a produtividade dos usuários finais.",
-                    "technologies": {
-                        "0": { "name": "React", "hovered": true },
-                        "1": { "name": "Next.js" },
-                        "2": { "name": "TypeScript" },
-                        "3": { "name": "Material UI" },
-                        "4": { "name": "Styled Components" },
-                        "5": { "name": "Redux" }
-                    },
-                "cta": {
-                    "text": "Saiba mais",
-                    "href": "/experience/olos-tecnologia"
-                }
-            }
-        ]
+  "navbar": {
+    "logo": "Henrique Costa",
+    "menu": {
+      "experience": "Experiência",
+      "projects": "Projetos",
+      "articles": "Artigos",
+      "contact": "Entre em contato!"
     }
+  },
+  "hero": {
+    "image": "/profile_image.jpg",
+    "resumeUrl": "/CV - Henrique Costa.pdf",
+    "headerHighlight": "Engenheiro de Software",
+    "header": "Front-End",
+    "contactHref": "/contact",
+    "description": "Sou engenheiro de software front-end, especializado em elaborar soluções de alta qualidade. Trabalho com React, TypeScript, JavaScript, HTML, CSS e ferramentas como Next.js, Tailwind e Git. Busco sempre entregar performance, acessibilidade e boa experiência ao usuário.",
+    "cta": "Entre em contato!",
+    "downloadResume": "Baixe meu CV"
+  },
+  "experience": {
+    "title": "Experiência",
+    "description": "Confira minha jornada profissional e as habilidades que desenvolvi ao longo do caminho.",
+    "list": [
+      {
+        "role": "Estagiário de Desenvolvimento Front-End",
+        "company": "Olos Tecnologia",
+        "duration": "Dez. 2024 - Atual",
+        "shortDescription": "Colaboro com desenvolvedores front-end na criação e manutenção de aplicações web, utilizando tecnologias modernas como React, Next, Material UI, Styled Components, Redux e TypeScript, convertendo protótipos do Figma em código limpo e responsivo, o que aumentou a produtividade dos usuários finais.",
+        "technologies": {
+          "0": { "name": "React", "hovered": true },
+          "1": { "name": "Next.js" },
+          "2": { "name": "TypeScript" },
+          "3": { "name": "Material UI" },
+          "4": { "name": "Styled Components" },
+          "5": { "name": "Redux" }
+        },
+        "cta": {
+          "text": "Saiba mais",
+          "href": "/experience/olos-tecnologia"
+        }
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projetos",
+    "description": "Confira meus projetos e as habilidades que adquiri.",
+    "list": [
+      {
+        "projectImage": "/projects/lembrai.png",
+        "projectName": "Lembraí",
+        "shortDescription": "Um aplicativo completo para gerenciamento de finanças e manutenção automotiva, ajudando os usuários a controlar gastos e manter seus veículos em dia.",
+        "skills": {
+          "0": { "name": "React Native", "hovered": true },
+          "1": { "name": "TypeScript" },
+          "2": { "name": "Expo" },
+          "3": { "name": "Styled Components" },
+          "4": { "name": "Axios" }
+        },
+        "cta": {
+          "text": "Saber mais",
+          "href": "/project/lembrai"
+        },
+        "functionalities": {
+          "title": "Funcionalidades",
+          "description": "Funcionalidades principais implementadas incluem:",
+          "list": {
+            "0": "Controle de gastos com combustível",
+            "1": "Lembretes de manutenções preventivas",
+            "2": "Histórico detalhado de despesas",
+            "3": "Relatórios e gráficos de gastos",
+            "4": "Interface intuitiva e moderna"
+          }
+        },
+        "challenges": {
+          "title": "Desafios",
+          "description": "Principais desafios enfrentados incluem:",
+          "list": {
+            "0": "Sincronização de dados offline/online",
+            "1": "Implementação de notificações push",
+            "2": "Arquitetura escalável para múltiplos usuários"
+          }
+        }
+      },
+      {
+        "projectImage": "/projects/restaurantto.png",
+        "projectName": "Restaurantto",
+        "shortDescription": "Uma solução de PDV + ERP que está sendo desenvolvida para impulsionar a produtividade e o fluxo de trabalho de restaurantes de pequeno e médio porte.",
+        "skills": {
+          "0": { "name": "React", "hovered": true },
+          "1": { "name": "TypeScript" },
+          "2": { "name": "TailwindCSS" },
+          "3": { "name": "RxJS" },
+          "4": { "name": "Clean Architecture" },
+          "5": { "name": "Docker" }
+        },
+        "cta": {
+          "text": "Saber mais",
+          "href": "/project/restaurantto"
+        },
+        "functionalities": {
+          "title": "Funcionalidades",
+          "description": "Funcionalidades principais implementadas incluem:",
+          "list": {
+            "0": "Gestão de clientes e fornecedores",
+            "1": "Autenticação baseada em locatário (tenant)",
+            "2": "Gerenciamento de cardápio",
+            "3": "Integração com plataformas de entrega, como o iFood",
+            "4": "Interface intuitiva e moderna"
+          }
+        },
+        "challenges": {
+          "title": "Desafios",
+          "description": "Principais desafios enfrentados incluem:",
+          "list": {
+            "0": "Sincronização de dados offline/online",
+            "1": "Implementação com plataformas de entrega",
+            "2": "Arquitetura escalável para múltiplos usuários com fluxo de trabalho baseado em locatário"
+          }
+        }
+      }
+    ]
+  }
 }

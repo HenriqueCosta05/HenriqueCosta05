@@ -41,5 +41,84 @@
                 }
             }
         ]
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "Check out my projects and the skills I've obtained.",
+        "list": [
+            {
+              "projectImage": "/projects/lembrai.png",
+              "projectName": "Lembraí",
+              "shortDescription": "A complete app for managing finances and automotive maintenance, helping users control expenses and keep their vehicles up to date.",
+              "skills": {
+                "0": { "name": "React Native", "hovered": true },
+                "1": { "name": "TypeScript" },
+                "2": { "name": "Expo" },
+                "3": { "name": "Styled Components" },
+                "4": { "name": "Axios" }
+              },
+              "cta": {
+                "text": "Learn more",
+                "href": "/project/lembrai"
+              },
+              "functionalities": {
+                "title": "Funcionalities",
+                "description": "Key implemented functionalities include:",
+                "list": {
+                  "0": "Fuel expense tracking",
+                  "1": "Preventive maintenance reminders",
+                  "2": "Detailed expense history",
+                  "3": "Expense reports and charts",
+                  "4": "Intuitive and modern interface"
+                }
+              },
+              "challenges": {
+                "title": "Challenges",
+                "description": "Main challenges faced include:",
+                "list": {
+                  "0": "Offline/online data synchronization",
+                  "1": "Implementation of push notifications",
+                  "2": "Scalable architecture for multiple users"
+                }
+              }
+            },
+            {
+              "projectImage": "/projects/restaurantto.png",
+              "projectName": "Restaurantto",
+              "shortDescription": "A POS + ERP solution that is being developed to boost small and mid-sized restaurants' productivity and workflow.",
+              "skills": {
+                "0": "Angular 18",
+                "1": "TypeScript",
+                "2": "TailwindCSS",
+                "3": "RxJS",
+                "4": "Clean Architecture",
+                "5": "Docker"
+              },
+              "cta": {
+                "text": "Learn more",
+                "href": "/project/restaurantto"
+              },
+              "functionalities": {
+                "title": "Funcionalities",
+                "description": "Key implemented functionalities include:",
+                "list": {
+                  "0": "Customer and Supplier Management",
+                  "1": "Tenant-based authentication",
+                  "2": "Menu management",
+                  "3": "Integration with delivery platforms, such as Ifood",
+                  "4": "Intuitive and modern interface"
+                }
+              },
+              "challenges": {
+                "title": "Challenges",
+                "description": "Main challenges faced include:",
+                "list": {
+                  "0": "Offline/online data synchronization",
+                  "1": "Implementation with delivery platforms",
+                  "2": "Scalable architecture for multiple users with tenant-based workflow"
+                }
+              }
+            }
+        ]
     }
 }

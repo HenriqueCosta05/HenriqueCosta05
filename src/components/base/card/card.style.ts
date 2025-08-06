@@ -15,7 +15,6 @@ export const StyledCardWrapper = styled(motion.section)`
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         border-color: rgba(0, 0, 0, 0.2);
     }
-    width: 100%;
 `;
 
 export const StyledCardImage = styled.div`
@@ -79,6 +78,7 @@ export const StyledCardDescription = styled.p`
     color: #777;
     line-height: 1.6;
     margin: 0;
+    text-align: left;
 `;
 
 export const StyledCardFlags = styled.div`
@@ -135,3 +135,13 @@ export const StyledCardCTA = styled(motion.a)`
         transform: translateY(0);
     }
 `; 
+
+export const StyledCardRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+    width: 100%;
+`;
