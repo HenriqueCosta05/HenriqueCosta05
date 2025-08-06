@@ -17,7 +17,7 @@ export const StyledProjectSection = styled(motion.section)`
     }
 `;
 
-export const StyledProjectTitle = styled.h2`
+export const StyledProjectTitle = styled(motion.h2)`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -34,13 +34,14 @@ export const StyledProjectTitle = styled.h2`
     }
 `;
 
-export const StyledProjectGrid = styled.div`
+export const StyledProjectGrid = styled(motion.div)`
     display: grid;
     margin-top: 48px;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
     
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -54,10 +55,26 @@ export const StyledProjectGrid = styled.div`
         margin-top: 56px;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
-        
 `;
 
-export const StyledProjectDescription = styled.p`
+export const StyledProjectCard = styled(motion.div)`
+    width: 100%;
+    will-change: transform;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
+    &:nth-child(even) {
+        transform: translateY(20px);
+    }
+    
+    @media (max-width: 768px) {
+        &:nth-child(even) {
+            transform: translateY(0);
+        }
+    }
+`;
+
+export const StyledProjectDescription = styled(motion.p)`
     font-size: 1.125rem;
     color: #666;
     margin-bottom: 40px;

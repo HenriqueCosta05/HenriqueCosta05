@@ -45,6 +45,7 @@
   "projects": {
     "title": "Projetos",
     "description": "Confira meus projetos e as habilidades que adquiri.",
+    "skills": "Tecnologias utilizadas",
     "list": [
       {
         "projectImage": "/projects/lembrai.png",
@@ -59,7 +60,11 @@
         },
         "cta": {
           "text": "Saber mais",
-          "href": "/project/lembrai"
+          "href": "/project/0"
+        },
+        "viewCode": {
+          "text": "Código fonte",
+          "href": "https://github.com/HenriqueCosta05/lembrai"
         },
         "functionalities": {
           "title": "Funcionalidades",
@@ -96,7 +101,11 @@
         },
         "cta": {
           "text": "Saber mais",
-          "href": "/project/restaurantto"
+          "href": "/project/1"
+        },
+        "viewCode": {
+          "text": "Acessar no Github",
+          "href": "https://github.com/HenriqueCosta05/Restaurantto-Web"
         },
         "functionalities": {
           "title": "Funcionalidades",
