@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import styled from "styled-components";
 
-export const StyledCardWrapper = styled(motion.section)`
+export const StyledCardWrapper = styled(motion.section)<{$orientation?: "horizontal" | "vertical"}>`
     background: var(--background, #fff);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -11,6 +11,12 @@ export const StyledCardWrapper = styled(motion.section)`
     border: 1px solid rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: ${props => props.$orientation === "horizontal" ? "row" :
+        "column"};
+    align-items: ${props => props.$orientation === "horizontal" ? "center" : "flex-start"};
+    gap: 16px;
     
     &::before {
         content: '';
@@ -40,7 +46,7 @@ export const StyledCardWrapper = styled(motion.section)`
 
 export const StyledCardImage = styled.div`
     width: 100%;
-    height: 200px;
+    height: 350px;
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 16px;

@@ -1,133 +1,137 @@
 {
-    "navbar": {
-        "logo": "Henrique Costa",
-        "menu": {
-            "experience": "Experience",
-            "projects": "Projects",
-            "articles": "Articles",
-            "contact": "Contact me!"
-        }
-    },
-    "hero": {
-        "description": "I'm a front-end software engineer, specialized in crafting high-quality solutions. I work with React, TypeScript, JavaScript, HTML, CSS, and tools like Next.js, Tailwind, and Git. I always strive to deliver performance, accessibility, and a great user experience.",
-        "image": "/profile_image.jpg",
-        "resumeUrl": "/CV - Henrique Costa.pdf",
-        "headerHighlight": "Front-End",
-        "header": "Software Engineer",
-        "cta": "Download my CV!",
-        "contactHref": "/contact",
-        "downloadResume": "Download CV"
-    },
-    "experience": {
-        "title": "Experience",
-        "description": "Check out my professional journey and the skills I've developed along the way.",
-        "list": [
-            {
-                "role": "Front-End Development Intern",
-                "company": "Olos Tecnologia",
-                "duration": "Dec. 2024 - Present",
-                "shortDescription": "I collaborate with front-end developers in creating and maintaining web applications, using modern technologies like React, Next, Material UI, Styled Components, Redux, and TypeScript, converting Figma prototypes into clean and responsive code, which increased end-user productivity.",
-                "technologies": {
-                    "0": { "name": "React", "hovered": true },
-                    "1": { "name": "Next.js" },
-                    "2": { "name": "TypeScript" },
-                    "3": { "name": "Material UI" },
-                    "4": { "name": "Styled Components" },
-                    "5": { "name": "Redux" }
-                },
-                "cta": {
-                    "text": "Learn more",
-                    "href": "/experience/olos-tecnologia"
-                }
-            }
-        ]
-    },
-    "projects": {
-        "title": "Projects",
-        "description": "Check out my projects and the skills I've obtained.",
-        "skills": "Technologies used",
-        "list": [
-            {
-              "projectImage": "/projects/lembrai.png",
-              "projectName": "Lembraí",
-              "shortDescription": "A complete app for managing finances and automotive maintenance, helping users control expenses and keep their vehicles up to date.",
-              "skills": {
-                "0": { "name": "React Native", "hovered": true },
-                "1": { "name": "TypeScript" },
-                "2": { "name": "Expo" },
-                "3": { "name": "Styled Components" },
-                "4": { "name": "Axios" }
-              },
-              "cta": {
-                "text": "Learn more",
-                "href": "/project/0"
-              },
-              "viewCode": {
-                "text": "See on GitHub",
-                "href": "https://github.com/HenriqueCosta05/lembrai"
-              },
-              "functionalities": {
-                "title": "Funcionalities",
-                "description": "Key implemented functionalities include:",
-                "list": {
-                  "0": "Fuel expense tracking",
-                  "1": "Preventive maintenance reminders",
-                  "2": "Detailed expense history",
-                  "3": "Expense reports and charts",
-                  "4": "Intuitive and modern interface"
-                }
-              },
-              "challenges": {
-                "title": "Challenges",
-                "description": "Main challenges faced include:",
-                "list": {
-                  "0": "Offline/online data synchronization",
-                  "1": "Implementation of push notifications",
-                  "2": "Scalable architecture for multiple users"
-                }
-              }
-            },
-            {
-              "projectImage": "/projects/restaurantto.png",
-              "projectName": "Restaurantto",
-              "shortDescription": "A POS + ERP solution that is being developed to boost small and mid-sized restaurants' productivity and workflow.",
-              "skills": {
-                "0": "Angular 18",
-                "1": "TypeScript",
-                "2": "TailwindCSS",
-                "3": "RxJS",
-                "4": "Clean Architecture",
-                "5": "Docker"
-              },
-              "cta": {
-                "text": "Learn more",
-                "href": "/project/1"
-              },
-              "viewCode": {
-                "text": "See on GitHub",
-                "href": "https://github.com/HenriqueCosta05/Restaurantto-Web"
-              },
-              "functionalities": {
-                "title": "Funcionalities",
-                "description": "Key implemented functionalities include:",
-                "list": {
-                  "0": "Customer and Supplier Management",
-                  "1": "Tenant-based authentication",
-                  "2": "Menu management",
-                  "3": "Integration with delivery platforms, such as Ifood",
-                  "4": "Intuitive and modern interface"
-                }
-              },
-              "challenges": {
-                "title": "Challenges",
-                "description": "Main challenges faced include:",
-                "list": {
-                  "0": "Offline/online data synchronization",
-                  "1": "Implementation with delivery platforms",
-                  "2": "Scalable architecture for multiple users with tenant-based workflow"
-                }
-              }
-            }
-        ]
+  "navbar": {
+    "logo": "Henrique Costa",
+    "menu": {
+      "experience": "Experience",
+      "projects": "Projects",
+      "articles": "Articles",
+      "contact": "Contact me!"
     }
+  },
+  "hero": {
+    "description": "I'm a front-end software engineer, specialized in crafting high-quality solutions. I work with React, TypeScript, JavaScript, HTML, CSS, and tools like Next.js, Tailwind, and Git. I always strive to deliver performance, accessibility, and a great user experience.",
+    "image": "/profile_image.jpg",
+    "resumeUrl": "/CV - Henrique Costa.pdf",
+    "headerHighlight": "Front-End",
+    "header": "Software Engineer",
+    "cta": "Contact me!",
+    "contactHref": "/contact",
+    "downloadResume": "Download CV"
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Check out my professional journey and the skills I've developed along the way.",
+    "list": [
+      {
+        "role": "Front-End Development Intern",
+        "company": "Olos Tecnologia",
+        "duration": "Dec. 2024 - Present",
+        "shortDescription": "I collaborate with front-end developers in creating and maintaining web applications, using modern technologies like React, Next, Material UI, Styled Components, Redux, and TypeScript, converting Figma prototypes into clean and responsive code, which increased end-user productivity.",
+        "technologies": {
+          "0": { "name": "React", "hovered": true },
+          "1": { "name": "Next.js" },
+          "2": { "name": "TypeScript" },
+          "3": { "name": "Material UI" },
+          "4": { "name": "Styled Components" },
+          "5": { "name": "Redux" }
+        },
+        "cta": {
+          "text": "Learn more",
+          "href": "/experience/olos-tecnologia"
+        }
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Check out my projects and the skills I've obtained.",
+    "skills": "Technologies used",
+    "list": [
+      {
+        "projectImage": "/projects/lembrai.png",
+        "projectName": "Lembraí",
+        "shortDescription": "A complete app for managing finances and automotive maintenance, helping users control expenses and keep their vehicles up to date.",
+        "skills": {
+          "0": { "name": "React Native", "hovered": true },
+          "1": { "name": "TypeScript" },
+          "2": { "name": "Expo" },
+          "3": { "name": "Styled Components" },
+          "4": { "name": "Axios" }
+        },
+        "cta": {
+          "text": "Learn more",
+          "href": "/project/0"
+        },
+        "viewCode": {
+          "text": "See on GitHub",
+          "href": "https://github.com/HenriqueCosta05/lembrai"
+        },
+        "functionalities": {
+          "title": "Funcionalities",
+          "description": "Key implemented functionalities include:",
+          "list": {
+            "0": "Fuel expense tracking",
+            "1": "Preventive maintenance reminders",
+            "2": "Detailed expense history",
+            "3": "Expense reports and charts",
+            "4": "Intuitive and modern interface"
+          }
+        },
+        "challenges": {
+          "title": "Challenges",
+          "description": "Main challenges faced include:",
+          "list": {
+            "0": "Offline/online data synchronization",
+            "1": "Implementation of push notifications",
+            "2": "Scalable architecture for multiple users"
+          }
+        }
+      },
+      {
+        "projectImage": "/projects/restaurantto.png",
+        "projectName": "Restaurantto",
+        "shortDescription": "A POS + ERP solution that is being developed to boost small and mid-sized restaurants' productivity and workflow.",
+        "skills": {
+          "0": { "name": "Angular 18", "hovered": true },
+          "1": { "name": "TypeScript" },
+          "2": { "name": "TailwindCSS" },
+          "3": { "name": "RxJS" },
+          "4": { "name": "Clean Architecture" },
+          "5": { "name": "Docker" }
+        },
+        "cta": {
+          "text": "Learn more",
+          "href": "/project/1"
+        },
+        "viewCode": {
+          "text": "See on GitHub",
+          "href": "https://github.com/HenriqueCosta05/Restaurantto-Web"
+        },
+        "functionalities": {
+          "title": "Funcionalities",
+          "description": "Key implemented functionalities include:",
+          "list": {
+            "0": "Customer and Supplier Management",
+            "1": "Tenant-based authentication",
+            "2": "Menu management",
+            "3": "Integration with delivery platforms, such as Ifood",
+            "4": "Intuitive and modern interface"
+          }
+        },
+        "challenges": {
+          "title": "Challenges",
+          "description": "Main challenges faced include:",
+          "list": {
+            "0": "Offline/online data synchronization",
+            "1": "Implementation with delivery platforms",
+            "2": "Scalable architecture for multiple users with tenant-based workflow"
+          }
+        }
+      }
+    ]
+  },
+  "articles": {
+    "title": "Articles",
+    "description": "These are some of my articles that I've written during my journey as a developer."
+  }
 }

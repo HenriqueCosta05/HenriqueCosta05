@@ -129,5 +129,9 @@
         }
       }
     ]
+  },
+  "articles": {
+    "title": "Artículos",
+    "description": "Estos son algunos de mis artículos que he escrito durante mi trayectoria como desarrollador."
   }
 }

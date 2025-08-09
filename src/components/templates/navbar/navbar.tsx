@@ -64,20 +64,20 @@ const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProp
 
                         <StyledDesktopMenu>
                             <StyledNavLink
-                                href="/experience"
-                                $isActive={pathname.includes("/experience")}
+                                href="/#experience"
+                                $isActive={pathname.includes("/#experience")}
                             >
                                 {t("menu.experience")}
                             </StyledNavLink>
                             <StyledNavLink
-                                href="/projects"
-                                $isActive={pathname.includes("/projects")}
+                                href="/#projects"
+                                $isActive={pathname.includes("/#projects")}
                             >
                                 {t("menu.projects")}
                             </StyledNavLink>
                             <StyledNavLink
-                                href="/articles"
-                                $isActive={pathname.includes("/articles")}
+                                href="/#articles"
+                                $isActive={pathname.includes("/#articles")}
                             >
                                 {t("menu.articles")}
                             </StyledNavLink>
@@ -142,29 +142,28 @@ const Navbar = ({ logoText = "Henrique", highlightedText = "Costa" }: NavbarProp
                     >
                         <StyledMobileMenuContent>
                             <StyledMobileNavLink
-                                href="/experience"
-                                $isActive={pathname.includes("/experience")}
+                                href="/#experience"
+                                $isActive={pathname.includes("/#experience")}
                                 onClick={handleMobileLinkClick}
                             >
                                 {t("menu.experience")}
                             </StyledMobileNavLink>
                             <StyledMobileNavLink
-                                href="/projects"
-                                $isActive={pathname.includes("/projects")}
+                                href="/#projects"
+                                $isActive={pathname.includes("/#projects")}
                                 onClick={handleMobileLinkClick}
                             >
                                 {t("menu.projects")}
                             </StyledMobileNavLink>
                             <StyledMobileNavLink
                                 href="/articles"
-                                $isActive={pathname.includes("/articles")}
+                                $isActive={pathname.includes("/#articles")}
                                 onClick={handleMobileLinkClick}
                             >
                                 {t("menu.articles")}
                             </StyledMobileNavLink>
                             <StyledMobileContactLink
-                                href="/contact"
-                                $isActive={pathname === "/contact"}
+                                href="/#contact"
                                 onClick={handleMobileLinkClick}
                             >
                                 <span>{t("menu.contact")}</span>

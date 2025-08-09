@@ -3,9 +3,9 @@ import { CardProps } from "./card.interface";
 import * as S from "./card.style";
 
 export default function Card(Props: CardProps) {
-    const { image, title, subtitle, endSubtitle, description, flags, cta} = Props;
+    const { image, title, subtitle, endSubtitle, description, flags, cta, orientation = "vertical" } = Props;
     return (
-        <S.StyledCardWrapper>
+        <S.StyledCardWrapper $orientation={orientation}>
             {image && (
                 <S.StyledCardImage>
                     <img src={image?.src} alt={image?.alt} />

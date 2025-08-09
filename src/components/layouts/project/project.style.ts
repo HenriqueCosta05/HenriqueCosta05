@@ -82,9 +82,9 @@ export const StyledDetailedProjectButtonWrapper = styled(motion.div)`
 export const StyledDetailedProjectImage = styled(motion.img)`
     width: 100%;
     height: 75vh;
-    border-radius: 36px;
+    border-radius: 6px;
     margin: 24px 0;
-    border: 1px solid var(--secondary);
+    object-fit: cover;
 `;
 
 export const StyledTechStackContainer = styled(motion.div)`
@@ -166,8 +166,7 @@ export const StyledFeatureItem = styled(motion.li)`
     
     &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(177, 108, 234, 0.15);
-        border-color: var(--primary);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     }
 `;
 
@@ -183,22 +182,20 @@ export const StyledChallengeList = styled(motion.ul)`
 export const StyledChallengeItem = styled(motion.li)`
     position: relative;
     padding: 20px 24px 20px 56px;
-    background: linear-gradient(135deg, var(--secondary), var(--tertiary));
-    border: 1px solid var(--quaternary);
+    border: 1px solid rgba(177, 108, 234, 0.15);
     border-radius: 12px;
-    color: #fff;
+    color: var(--text);
     font-size: 1rem;
     line-height: 1.6;
     transition: all 0.3s ease;
     
     &:before {
-        content: '⚡';
+        content: '🎯';
         position: absolute;
-        left: 16px;
+        left: 20px;
         top: 20px;
         width: 28px;
         height: 28px;
-        background: linear-gradient(135deg, var(--tertiary), var(--quaternary));
         color: white;
         border-radius: 50%;
         display: flex;
@@ -209,7 +206,5 @@ export const StyledChallengeItem = styled(motion.li)`
     
     &:hover {
         transform: translateX(4px);
-        box-shadow: 0 8px 25px rgba(255, 94, 105, 0.3);
-        border-color: var(--secondary);
     }
 `;
