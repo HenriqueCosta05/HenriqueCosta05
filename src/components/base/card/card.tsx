@@ -3,7 +3,7 @@ import { CardProps } from "./card.interface";
 import * as S from "./card.style";
 
 export default function Card(Props: CardProps) {
-    const { image, title, subtitle, endSubtitle, description, flags, cta, orientation = "vertical" } = Props;
+    const { image, title, subtitle, endSubtitle, description, flags, cta, orientation = "vertical", bulletPoints } = Props;
     return (
         <S.StyledCardWrapper $orientation={orientation}>
             {image && (
@@ -18,6 +18,13 @@ export default function Card(Props: CardProps) {
                     <S.StyledCardSubtitle>{endSubtitle}</S.StyledCardSubtitle>
                 </S.StyledCardSubtitleWrapper>
                 <S.StyledCardDescription>{description}</S.StyledCardDescription>
+                {bulletPoints && bulletPoints.length > 0 && (
+                    <S.StyledCardBulletPoints>
+                        {bulletPoints.map((point, index) => (
+                            <S.StyledCardBulletPoint key={index}>{point}</S.StyledCardBulletPoint>
+                        ))}
+                    </S.StyledCardBulletPoints>
+                )}
                 {flags && typeof flags === "object" && (
                     <S.StyledCardFlags>
                         {Object.values(flags).map((flag, index) => (

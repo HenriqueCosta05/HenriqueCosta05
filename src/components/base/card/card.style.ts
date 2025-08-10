@@ -193,3 +193,27 @@ export const StyledCardRow = styled.div`
     margin-top: 16px;
     width: 100%;
 `;
+
+export const StyledCardBulletPoints = styled.ul`
+    list-style: none;
+    padding: 0;
+    margin: 0;
+`;
+
+export const StyledCardBulletPoint = styled.li`
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary, #b16cea), var(--secondary, #ff5e69));
+    }
+`;

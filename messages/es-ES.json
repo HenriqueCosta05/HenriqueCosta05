@@ -20,21 +20,15 @@
   },
   "experience": {
     "title": "Experiencia",
-    "description": "Descubre mi trayectoria profesional y las habilidades que he desarrollado en el camino.",
+    "description": "Descubre mi trayectoria profesional y las habilidades que he desarrollado con el tiempo.",
+    "shared": {
+      "current": "Actual",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "loading": "Cargando..."
+    },
     "list": [
       {
-        "role": "Pasante de Desarrollo Front-End",
-        "company": "Olos Tecnologia",
-        "duration": "Dic. 2024 - Actual",
-        "shortDescription": "Colaboro con desarrolladores front-end en la creación y mantenimiento de aplicaciones web, utilizando tecnologías modernas como React, Next, Material UI, Styled Components, Redux y TypeScript, convirtiendo prototipos de Figma en código limpio y responsivo, lo que aumentó la productividad de los usuarios finales.",
-        "technologies": {
-          "0": { "name": "React", "hovered": true },
-          "1": { "name": "Next.js" },
-          "2": { "name": "TypeScript" },
-          "3": { "name": "Material UI" },
-          "4": { "name": "Styled Components" },
-          "5": { "name": "Redux" }
-        },
         "cta": {
           "text": "Saber más",
           "href": "/experience/olos-tecnologia"

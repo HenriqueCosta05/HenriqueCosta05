@@ -1,2 +1,2 @@
 export * from './locale';
-export * from './sanity'
+export * from './sanity';

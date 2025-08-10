@@ -18,6 +18,7 @@ export interface CardProps {
     subtitle?: string;
     endSubtitle?: string;
     description?: string;
+    bulletPoints?: string[];
     orientation?: "horizontal" | "vertical";
     flags?: CardFlag[];
     image?: CardImage;
