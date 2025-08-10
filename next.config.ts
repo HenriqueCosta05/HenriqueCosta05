@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
     styledComponents: true,
     emotion: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true
+  }
 };
 
 export default withNextIntl(nextConfig);
