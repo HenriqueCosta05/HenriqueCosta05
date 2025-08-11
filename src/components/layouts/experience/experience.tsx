@@ -1,14 +1,14 @@
 import { Card } from "@/components/base";
 import * as S from "./experience.styles";
 import { useTranslations, useLocale } from "next-intl";
-import type {Experience} from "../../../../sanity/types/experiences";
+import type {Experience as APIExperience} from "../../../../sanity/types/experiences";
 import { useEffect, useState } from "react";
 import { getExperiences } from "@/services";
 import { dateStringToLocaleDate, getLocaleKey, portableTextToBulletPoints } from "@/utils";
 
 
 const Experience = () => {
-    const [experiencesData, setExperiencesData] = useState<Experience[]>([]);
+    const [experiencesData, setExperiencesData] = useState<APIExperience[]>([]);
     const currentLocale = useLocale();
     const t = useTranslations("experience");
 
