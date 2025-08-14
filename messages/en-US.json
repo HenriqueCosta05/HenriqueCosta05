@@ -31,7 +31,7 @@
       {
         "cta": {
           "text": "Learn more",
-          "href": "/experience/olos-tecnologia"
+          "href": "/experience/{{slug}}"
         }
       }
     ]
@@ -40,6 +40,16 @@
     "title": "Projects",
     "description": "Check out my projects and the skills I've obtained.",
     "skills": "Technologies used",
+    "cta": {
+      "text": "View all projects",
+      "href": "/projects"
+    },
+    "shared": {
+      "cta": {
+          "text": "Learn more",
+          "href": "/project/{slug}"
+        }
+    },
     "list": [
       {
         "projectImage": "/projects/lembrai.png",
@@ -54,7 +64,7 @@
         },
         "cta": {
           "text": "Learn more",
-          "href": "/project/0"
+          "href": "/project/{slug}"
         },
         "viewCode": {
           "text": "See on GitHub",
@@ -82,20 +92,9 @@
         }
       },
       {
-        "projectImage": "/projects/restaurantto.png",
-        "projectName": "Restaurantto",
-        "shortDescription": "A POS + ERP solution that is being developed to boost small and mid-sized restaurants' productivity and workflow.",
-        "skills": {
-          "0": { "name": "Angular 18", "hovered": true },
-          "1": { "name": "TypeScript" },
-          "2": { "name": "TailwindCSS" },
-          "3": { "name": "RxJS" },
-          "4": { "name": "Clean Architecture" },
-          "5": { "name": "Docker" }
-        },
         "cta": {
           "text": "Learn more",
-          "href": "/project/1"
+          "href": "/project/{slug}"
         },
         "viewCode": {
           "text": "See on GitHub",

@@ -1,19 +1,37 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import * as S from './project.style'
 import { Button } from '@/components/base';
 import { Navbar } from '@/components/templates';
+import { useEffect, useState } from 'react';
+import { Project } from '../../../../sanity';
+import { getProjectBySlug } from '@/services';
+import { getLocaleKey } from '@/utils';
 
 interface DetailedProjectProps {
-    projectIndex: number;
-    projectName?: string;
+    projectSlug: string;
 }
 
-const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
+const DetailedProject = ({ projectSlug }: DetailedProjectProps) => {
     const t = useTranslations('projects')
+
+    const [detailedProject, setDetailedProject] = useState<Project | null>(null);
+
+    useEffect(() => {
+        const fetchProject = async () => {
+            const project = await getProjectBySlug(projectSlug);
+            console.log("Fetched project:", project);
+            setDetailedProject(project);
+        };
+
+        fetchProject();
+    }, [projectSlug]);
+
+    const locale = useLocale();
+    const localeKey = getLocaleKey(locale);
 
     return (
         <>
-            <Navbar />
+        <Navbar />
         <S.StyledDetailedProjectWrapper
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -26,7 +44,7 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
             >
-                {t(`list.${projectIndex}.projectName`)}
+                {detailedProject?.projectName[localeKey]}
             </S.StyledDetailedProjectTitle>
 
             <S.StyledDetailedProjectDescription
@@ -35,10 +53,10 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             >
-                {t(`list.${projectIndex}.shortDescription`)}
+                {detailedProject?.shortDescription[localeKey]}
             </S.StyledDetailedProjectDescription>
                 <S.StyledDetailedProjectImage
-                    src={t(`list.${projectIndex}.projectImage`)}
+                    src={detailedProject?.projectImage?.asset.url}
                 />
             <S.StyledDetailedProjectSubtitle
                 initial={{ opacity: 0, y: 20 }}
@@ -55,12 +73,11 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
             >
-                {Object.values(t.raw(`list.${projectIndex}.skills`) as Record<string, { name: string; hovered?: boolean } | string>)
-                    .map((skill: { name: string; hovered?: boolean } | string, index) => {
-                        const skillName = typeof skill === 'string' ? skill : skill.name;
-                        return (
-                            <S.StyledTechChip
-                                key={index}
+                {Object.values(detailedProject?.skills || {}).map((skill, index) => {
+                    const skillName = typeof skill === 'string' ? skill : skill.name;
+                    return (
+                        <S.StyledTechChip
+                            key={index}
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
@@ -83,7 +100,7 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
             >
-                {t(`list.${projectIndex}.functionalities.title`)}
+                {detailedProject?.functionalities.title[localeKey]}
             </S.StyledDetailedProjectSubtitle>
 
             <S.StyledDetailedProjectDescription
@@ -92,7 +109,7 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.7 }}
             >
-                {t(`list.${projectIndex}.functionalities.description`)}
+                {detailedProject?.functionalities.description[localeKey]}
             </S.StyledDetailedProjectDescription>
 
             <S.StyledFeatureList
@@ -101,13 +118,12 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
             >
-                {Object.values(t.raw(`list.${projectIndex}.functionalities.list`) as Record<string, string>)
-                    .map((functionality, index) => (
-                        <S.StyledFeatureItem
-                            key={index}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
+                {Object.values(detailedProject?.functionalities.list?.[localeKey] || {}).map((functionality, index) => (
+                    <S.StyledFeatureItem
+                        key={index}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
                             transition={{ 
                                 duration: 0.4, 
                                 ease: "easeOut", 
@@ -126,7 +142,7 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 1.0 }}
             >
-                {t(`list.${projectIndex}.challenges.title`)}
+                {detailedProject?.challenges.title[localeKey]}
             </S.StyledDetailedProjectSubtitle>
 
             <S.StyledDetailedProjectDescription
@@ -135,7 +151,7 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 1.1 }}
             >
-                {t(`list.${projectIndex}.challenges.description`)}
+                {detailedProject?.challenges.description[localeKey]}
             </S.StyledDetailedProjectDescription>
             <S.StyledChallengeList
                 initial={{ opacity: 0, y: 20 }}
@@ -143,12 +159,11 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 1.2 }}
             >
-                {Object.values(t.raw(`list.${projectIndex}.challenges.list`) as Record<string, string>)
-                    .map((challenge, index) => (
-                        <S.StyledChallengeItem
-                            key={index}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                {Object.values(detailedProject?.challenges.list?.[localeKey] || {}).map((challenge, index) => (
+                    <S.StyledChallengeItem
+                        key={index}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ 
                                 duration: 0.4, 
@@ -169,13 +184,14 @@ const DetailedProject = ({ projectIndex }: DetailedProjectProps) => {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 1.4 }}
             >
                 <Button
-                    txt={t(`list.${projectIndex}.viewCode.text`)}
-                        href={t(`list.${projectIndex}.viewCode.href`)} 
+                    txt={detailedProject?.viewCode?.text?.[localeKey] || ""}
+                    href={detailedProject?.viewCode?.href || ""}
                 />
             </S.StyledDetailedProjectButtonWrapper>
             </S.StyledDetailedProjectWrapper>
             </>
     )
+    
 }
 
 export default DetailedProject;

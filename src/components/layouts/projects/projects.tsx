@@ -1,10 +1,26 @@
 import { useTranslations } from "next-intl";
 import * as S from "./projects.style";
 import { Card } from "@/components/base";
+import { useEffect, useState } from "react";
+import type { Project } from "../../../../sanity";
+import { getProjects } from "@/services";
+import { useLocale } from "next-intl";
+import { getLocaleKey } from "@/utils";
 
-const Project = () => {
+const Projects = () => {
     const t = useTranslations("projects");
-    const projectIndexes = [0, 1];
+    const currentLocale = useLocale();
+
+    const [projects, setProjects] = useState<Project[]>([]);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            const projects = await getProjects();
+            setProjects(projects);
+        };
+
+        fetchProjects();
+    }, []);
 
     return (
         <S.StyledProjectSection 
@@ -36,7 +52,8 @@ const Project = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.5 }}
             >
-                {projectIndexes.map((index) => {
+                {projects.map((project, index) => {
+                    const localeKey = getLocaleKey(currentLocale);
                     return (
                         <S.StyledProjectCard
                             key={index}
@@ -54,13 +71,13 @@ const Project = () => {
                             }}
                         >
                             <Card
-                                image={t(`list.${index}.projectImage`) ? { src: t(`list.${index}.projectImage`), alt: t(`list.${index}.projectName`) } : undefined}
-                                title={t(`list.${index}.projectName`)}
-                                description={t(`list.${index}.shortDescription`)}
-                                flags={Array.from(Object.values(t.raw(`list.${index}.skills`) as { name: string; hovered?: boolean }[]))}
+                                image={project.projectImage ? { src: project.projectImage.asset.url, alt: String(project.projectName) } : undefined}
+                                title={project.projectName[localeKey]}
+                                description={project.shortDescription[localeKey]}
+                                flags={project.skills}
                                 cta={{
-                                    title: t(`list.${index}.cta.text`),
-                                    to: t(`list.${index}.cta.href`)
+                                    title: t(`shared.cta.text`),
+                                    to: t(`shared.cta.href`, { slug: project.slug.current })
                                 }}
                             />
                         </S.StyledProjectCard>
@@ -71,4 +88,4 @@ const Project = () => {
     )
 }
 
-export default Project;
+export default Projects;

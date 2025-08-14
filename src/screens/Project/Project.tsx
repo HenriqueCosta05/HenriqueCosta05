@@ -3,11 +3,11 @@
 import { Project } from "@/components/layouts";
 
 interface ProjectScreenProps {
-    projectIndex: number;
-    projectName?: string;
+   projectSlug: string;
 }
-export default function ProjectScreen({ projectName, projectIndex }: ProjectScreenProps) {
+
+export default function ProjectScreen({ projectSlug }: ProjectScreenProps) {
     return (
-        <Project projectName={projectName} projectIndex={projectIndex} />
+        <Project projectSlug={projectSlug} />
     )
 }

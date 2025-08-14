@@ -40,6 +40,16 @@
     "title": "Proyectos",
     "description": "Descubre mis proyectos y las habilidades que he adquirido.",
     "skills": "Tecnologías utilizadas",
+      "shared": {
+      "cta": {
+          "text": "Saber más",
+          "href": "/project/{slug}"
+        }
+    },
+    "cta": {
+      "text": "Ver todos los proyectos",
+      "href": "/projects"
+    },
     "list": [
       {
         "projectImage": "/projects/lembrai.png",
