@@ -6,12 +6,6 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: '_id',
-      title: 'ID',
-      type: 'string',
-      hidden: true,
-    }),
-    defineField({
       name: 'title',
       title: 'Title',
       type: 'object',
@@ -26,6 +20,16 @@ export default defineType({
       title: 'Slug',
       type: 'slug',
       options: { source: 'title.en', maxLength: 96 },
+    }),
+    defineField({
+      name: 'shortDescription',
+      title: 'Short Description',
+      type: 'object',
+      fields: [
+        { name: 'en', title: 'English', type: 'string' },
+        { name: 'es', title: 'Spanish', type: 'string' },
+        { name: 'pt', title: 'Portuguese', type: 'string' },
+      ],
     }),
     defineField({
       name: 'content',
@@ -51,16 +55,6 @@ export default defineType({
       name: 'publishedAt',
       title: 'Published At',
       type: 'datetime',
-    }),
-    defineField({
-      name: 'excerpt',
-      title: 'Excerpt',
-      type: 'object',
-      fields: [
-        { name: 'en', title: 'English', type: 'array', of: [{ type: 'block' }] },
-        { name: 'es', title: 'Spanish', type: 'array', of: [{ type: 'block' }] },
-        { name: 'pt', title: 'Portuguese', type: 'array', of: [{ type: 'block' }] },
-      ],
     }),
     defineField({
       name: 'mainImage',

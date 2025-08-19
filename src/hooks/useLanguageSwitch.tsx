@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const useLanguageSwitch = () => {
 
-    const [locale, setLocale] = useState<Locale>('en-US');
+    const [locale, setLocale] = useState<Locale>('pt-BR');
     
     useEffect(() => {
         const fetchLocale = async () => {
@@ -17,7 +17,7 @@ const useLanguageSwitch = () => {
 
     const getLocale = async () => {
         const locale = await getUserLocale();
-        return locale || 'en-US';
+        return locale || 'pt-BR';
     };
 
     const switchLanguage = async (newLocale: Locale) => {

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyledArticleContainer = styled(motion.div)`
     padding: 40px;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     border-radius: 16px;
 `
@@ -30,34 +30,20 @@ export const StyledArticleTitle = styled(motion.h1)`
     }
 `;
 
-export const StyledFeaturedArticleWrapper = styled(motion.div)`
-    padding: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 12px;
-    background: var(--background, #f9fafb);
-    transition: all 0.3s ease;
-
-    &:hover {
-        transform: translateY(-2px);
-    }
-`;
-
-export const StyledFeaturedArticleHeader = styled(motion.h2)`
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    background: linear-gradient(to right, var(--primary), var(--secondary));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    text-align: center;
+export const StyledArticleExcerpt = styled(motion.div)`
+    font-size: 1.25rem;
+    color: var(--text-secondary, #666);
+    margin-bottom: 32px;
+    line-height: 1.7;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 
     @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        padding: 0 12px;
     }
-    @media (min-width: 768px) {
-        font-size: 2rem;
-    }
-`;
+`

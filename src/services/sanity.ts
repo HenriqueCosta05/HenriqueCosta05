@@ -153,6 +153,7 @@ export const getArticles = async (): Promise<Article[]> => {
               title,
               slug,
               publishedAt,
+              shortDescription,
               excerpt,
               mainImage {
                 asset -> {
@@ -177,6 +178,7 @@ export const getArticleBySlug = async (slug: string): Promise<Article | null> =>
               slug,
               publishedAt,
               excerpt,
+              shortDescription,
               content,
               mainImage {
                 asset -> {

@@ -4,6 +4,7 @@ export type Article = {
   _id: string
   title: MultilingualString
   slug: Slug
+  shortDescription: MultilingualString
   content: MultilingualPortableText
   tags: MultilingualArrayString
   publishedAt: string

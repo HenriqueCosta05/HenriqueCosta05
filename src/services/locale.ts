@@ -5,7 +5,7 @@ import { cookies } from 'next/headers';
 import { Locale } from 'next-intl';
 
 export async function getUserLocale() {
-    const defaultLocale = 'en-US';
+    const defaultLocale = 'pt-BR';
     return (await cookies()).get(COOKIE_NAME)?.value || defaultLocale;
 }
 

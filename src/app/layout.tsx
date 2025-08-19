@@ -17,7 +17,7 @@ export default async function Layout({
     children,
 }: Props) {
 
-  const locale = await getUserLocale() || 'en-US';
+  const locale = await getUserLocale() || 'pt-BR';
     return (
         <html lang={locale}>
             <body className={`${plusJakartaSans.variable}`}>

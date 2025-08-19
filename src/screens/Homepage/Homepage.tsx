@@ -1,6 +1,7 @@
 "use client";
 
 import { Experience, Hero, Projects } from "@/components/layouts";
+import Articles from "@/components/layouts/articles/articles";
 import { Navbar } from "@/components/templates";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Experience />
       <Projects />
+      <Articles />
     </main>
   );
 }
