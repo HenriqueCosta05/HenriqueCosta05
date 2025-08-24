@@ -12,12 +12,9 @@ import {
     StyledMenuIcon,
     StyledDesktopMenu,
     StyledNavLink,
-    StyledContactLink,
-    StyledArrowIcon,
     StyledMobileMenu,
     StyledMobileMenuContent,
-    StyledMobileNavLink,
-    StyledMobileContactLink
+    StyledMobileNavLink
 } from "./navbar.styles";
 import { useTranslations } from "next-intl";
 import { Selector } from "@/components/base";
