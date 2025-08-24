@@ -33,7 +33,7 @@ export const StyledHeroTitle = styled.h1`
 `;
 
 export const StyledGradientText = styled.span`
-    background: linear-gradient(to right, #c084fc, #ef4444, #ea580c);
+    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -71,7 +71,7 @@ export const StyledCustomButton = styled(Link)`
     justify-content: center;
     padding: 12px 24px;
     width: 180px;
-    background: linear-gradient(to right, #c084fc, #ef4444, #ea580c);
+    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -83,6 +83,7 @@ export const StyledCustomButton = styled(Link)`
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
 `;
+
 
 export const StyledDownloadLink = styled(Link)`
     display: flex;

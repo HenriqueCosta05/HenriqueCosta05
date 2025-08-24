@@ -68,12 +68,6 @@ export const StyledNavLink = styled(Link, {
     }
 `;
 
-export const StyledContactLink = styled(StyledNavLink)`
-    display: flex;
-    align-items: center;
-    gap: 12px;
-`;
-
 export const StyledArrowIcon = styled.svg`
     width: 16px;
     height: 16px;

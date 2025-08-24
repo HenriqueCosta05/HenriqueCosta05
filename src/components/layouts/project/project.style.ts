@@ -18,7 +18,7 @@ export const StyledDetailedProjectTitle = styled(motion.h1)`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(to right, var(--primary), var(--secondary), var(--tertiary));
+    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -45,7 +45,7 @@ export const StyledDetailedProjectSubtitle = styled(motion.h3)`
         bottom: -4px;
         width: 40px;
         height: 3px;
-        background: linear-gradient(to right, var(--primary), var(--secondary));
+        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
         border-radius: 2px;
     }
     
@@ -110,7 +110,7 @@ export const StyledTechChip = styled(motion.span)`
     &:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(177, 108, 234, 0.3);
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
         color: white;
         border-color: transparent;
     }
@@ -136,7 +136,6 @@ export const StyledFeatureList = styled(motion.ul)`
 
 export const StyledFeatureItem = styled(motion.li)`
     position: relative;
-    
     padding: 16px 20px 16px 48px;
     background: var(--background);
     border: 1px solid rgba(177, 108, 234, 0.15);
@@ -154,7 +153,7 @@ export const StyledFeatureItem = styled(motion.li)`
         transform: translateY(-50%);
         width: 24px;
         height: 24px;
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
         color: white;
         border-radius: 50%;
         display: flex;

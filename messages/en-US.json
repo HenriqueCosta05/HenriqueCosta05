@@ -1,4 +1,12 @@
 {
+  "shared": {
+    "loading": "Loading...",
+    "notFound": "Not Found",
+    "current": "Current",
+    "previous": "Previous",
+    "next": "Next",
+    "back": "Back"
+  },
   "navbar": {
     "logo": "Henrique Costa",
     "menu": {
@@ -126,5 +134,13 @@
   "articles": {
     "title": "Articles",
     "description": "These are some of my articles that I've written during my journey as a developer."
+  },
+  "footer": {
+    "logo": "Henrique Costa",
+    "copyright": "© {year} Henrique Costa. All rights reserved.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/henriquecosta05/",
+      "github": "https://github.com/HenriqueCosta05"
+    }
   }
 }

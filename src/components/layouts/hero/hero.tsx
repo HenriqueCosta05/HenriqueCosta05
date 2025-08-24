@@ -33,10 +33,6 @@ const Hero = () => {
                 </StyledHeroDescription>
 
                 <StyledActionContainer>
-                    <Button
-                        txt={t("cta")}
-                        href={t("contactHref")}
-                    />
                     <StyledDownloadLink
                         href={t("resumeUrl")}
                         target="_blank"

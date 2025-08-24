@@ -1,7 +1,7 @@
 'use client';
 
 import { Article } from "@/components/layouts";
-import { Navbar } from "@/components/templates";
+import { Footer, Navbar } from "@/components/templates";
 
 interface ArticleScreenProps {
    articleSlug: string;
@@ -12,6 +12,7 @@ export default function ArticleScreen({ articleSlug }: ArticleScreenProps) {
         <>
             <Navbar />
             <Article articleSlug={articleSlug} />
+            <Footer />
         </>
     )
 }

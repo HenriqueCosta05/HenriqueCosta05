@@ -21,7 +21,7 @@ export const StyledArticleTitle = styled(motion.h2)`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #c084fc, #ef4444, #ea580c);
+    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

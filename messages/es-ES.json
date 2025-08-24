@@ -1,4 +1,12 @@
 {
+  "shared": {
+    "loading": "Cargando...",
+    "notFound": "No encontrado",
+    "current": "Actual",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "back": "Volver"
+  },
   "navbar": {
     "logo": "Henrique Costa",
     "menu": {
@@ -137,5 +145,13 @@
   "articles": {
     "title": "Artículos",
     "description": "Estos son algunos de mis artículos que he escrito durante mi trayectoria como desarrollador."
+  },
+  "footer": {
+    "logo": "Henrique Costa",
+    "copyright": "© {year} Henrique Costa. Todos los derechos reservados.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/henriquecosta05/",
+      "github": "https://github.com/HenriqueCosta05"
+    }
   }
 }

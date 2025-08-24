@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import styled from "styled-components";
 
 export const StyledCardWrapper = styled(motion.section)<{$orientation?: "horizontal" | "vertical"}>`
+    
     background: var(--background, #fff);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -98,11 +99,12 @@ export const StyledCardTitle = styled.h3`
     color: #333;
     margin: 0;
     line-height: 1.3;
-    background: linear-gradient(to right, #c084fc, #ef4444, #ea580c);
+    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 `;
+
 
 export const StyledCardSubtitleWrapper = styled.div`
     display: flex;
@@ -138,7 +140,7 @@ export const StyledCardFlags = styled.div`
 
 export const StyledCardFlag = styled.span<{ $hovered?: boolean }>`
     background: ${props => props.$hovered
-        ? 'linear-gradient(135deg, var(--primary, #b16cea), var(--secondary, #ff5e69))'
+        ? 'linear-gradient(to right, #fb923c, #ef4444, #9333ea)'
         : 'rgba(177, 108, 234, 0.1)'
     };
     color: ${props => props.$hovered ? '#fff' : 'var(--primary, #b16cea)'};
@@ -151,7 +153,7 @@ export const StyledCardFlag = styled.span<{ $hovered?: boolean }>`
     cursor: pointer;
     
     &:hover {
-        background: linear-gradient(135deg, var(--primary, #b16cea), var(--secondary, #ff5e69));
+        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
         color: #fff;
         transform: translateY(-1px);
     }
@@ -161,7 +163,7 @@ export const StyledCardCTA = styled(motion.a)`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary, #b16cea), var(--secondary, #ff5e69));
+    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
     color: #fff;
     text-decoration: none;
     padding: 12px 24px;
@@ -176,13 +178,13 @@ export const StyledCardCTA = styled(motion.a)`
     &:hover {
         transform: translateY(-2px);
         box-shadow: 0 6px 20px rgba(177, 108, 234, 0.4);
-        background: linear-gradient(135deg, var(--secondary, #ff5e69), var(--tertiary, #ff8a56));
     }
     
     &:active {
         transform: translateY(0);
     }
 `;
+
 
 export const StyledCardRow = styled.div`
     display: flex;
@@ -214,6 +216,6 @@ export const StyledCardBulletPoint = styled.li`
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: linear-gradient(135deg, var(--primary, #b16cea), var(--secondary, #ff5e69));
+        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
     }
 `;

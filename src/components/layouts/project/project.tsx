@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from 'next-intl';
 import * as S from './project.style'
 import { Button } from '@/components/base';
-import { Navbar } from '@/components/templates';
+import { Footer, Navbar } from '@/components/templates';
 import { useEffect, useState } from 'react';
 import { Project } from '../../../../sanity';
 import { getProjectBySlug } from '@/services';
@@ -189,6 +189,7 @@ const DetailedProject = ({ projectSlug }: DetailedProjectProps) => {
                 />
             </S.StyledDetailedProjectButtonWrapper>
             </S.StyledDetailedProjectWrapper>
+            <Footer />
             </>
     )
     

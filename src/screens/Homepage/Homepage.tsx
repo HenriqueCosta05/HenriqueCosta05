@@ -2,7 +2,7 @@
 
 import { Experience, Hero, Projects } from "@/components/layouts";
 import Articles from "@/components/layouts/articles/articles";
-import { Navbar } from "@/components/templates";
+import { Footer, Navbar } from "@/components/templates";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Articles />
+      <Footer />
     </main>
   );
 }
