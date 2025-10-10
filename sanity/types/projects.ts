@@ -22,6 +22,7 @@ export type Project = {
   projectName: MultilingualString
   slug: Slug
   projectImage?: SanityImage
+  gallery?: SanityImage[]
   shortDescription: MultilingualText
   skills: Skill[]
   cta?: CallToAction

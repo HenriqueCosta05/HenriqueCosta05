@@ -23,7 +23,7 @@
     "headerHighlight": "Desenvolvedor",
     "header": "Front-End",
     "contactHref": "/contact",
-    "description": "Sou desenvolvedor front-end, especializado em elaborar soluções de alta qualidade. Trabalho com React, TypeScript, JavaScript, Angular e ferramentas como Next.js, Tailwind e Git. Busco sempre entregar performance, acessibilidade e boa experiência ao usuário.",
+    "description": "Desenvolvedor de Software com experiência prática em React.js, Next.js, Node.js e TypeScript, criando aplicações web escaláveis, performáticas e centradas na experiência do usuário. Contribuo para o desenvolvimento de soluções internas que otimizam processos e melhoram a usabilidade de plataformas corporativas. Apaixonado por aprender novas tecnologias e aprimorar minhas habilidades, estou sempre em busca de desafios que me permitam crescer profissionalmente e agregar valor às equipes com as quais colaboro.",
     "cta": "Entre em contato!",
     "downloadResume": "Baixe meu CV"
   },
@@ -42,6 +42,28 @@
           "text": "Saiba mais",
           "href": "/experience/olos-tecnologia"
         }
+      }
+    ]
+  },
+  "education": {
+      "title": "Educação",
+      "description": "Aqui está um resumo da minha formação acadêmica e das qualificações que obtive."
+  },
+  "languages": {
+    "title": "Idiomas",
+    "description": "Estes são os idiomas que falo e meu nível de proficiência em cada um.",
+    "list": [
+      {
+        "name": "Português",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglês",
+        "level": "Avançado (C1)"
+      },
+      {
+        "name": "Espanhol",
+        "level": "Intermediário (B1)"
       }
     ]
   },

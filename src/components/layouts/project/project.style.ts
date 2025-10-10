@@ -207,3 +207,30 @@ export const StyledChallengeItem = styled(motion.li)`
         transform: translateX(4px);
     }
 `;
+
+
+export const StyledImageGrid = styled(motion.div)`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 16px;
+  margin: 40px 0;
+  
+  @media (max-width: 768px) {
+    gap: 12px;
+  }
+`;
+
+export const StyledGridImage = styled(motion.img)`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+`;

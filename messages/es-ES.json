@@ -21,7 +21,7 @@
     "resumeUrl": "/CV - Henrique Costa.pdf",
     "headerHighlight": "Desarrollador",
     "header": "Front-End",
-    "description": "Soy desarrollador front-end, especializado en desarrollar soluciones de alta calidad. Trabajo con React, TypeScript, JavaScript, Angular y herramientas como Next.js, Tailwind y Git. Siempre busco ofrecer rendimiento, accesibilidad y una buena experiencia de usuario.",
+    "description": "Desarrollador de Software con experiencia práctica en React.js, Next.js, Node.js y TypeScript, creando aplicaciones web escalables, de alto rendimiento y centradas en la experiencia del usuario. Contribuyo al desarrollo de soluciones internas que optimizan procesos y mejoran la usabilidad de plataformas corporativas.",
     "contactHref": "/contact",
     "cta": "¡Contáctame!",
     "downloadResume": "Descargar CV"
@@ -41,6 +41,28 @@
           "text": "Saber más",
           "href": "/experience/olos-tecnologia"
         }
+      }
+    ]
+  },
+  "education": {
+      "title": "Educación",
+      "description": "Aquí tienes un vistazo a mi formación académica y las cualificaciones que he obtenido."
+  },
+  "languages": {
+    "title": "Idiomas",
+    "description": "Estos son los idiomas que hablo y mi nivel de competencia en cada uno.",
+    "list": [
+      {
+        "name": "Portugués",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "Profesional completo (C1)"
+      },
+      {
+        "name": "Español",
+        "level": "Intermedio (B1)"
       }
     ]
   },

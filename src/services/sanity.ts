@@ -3,6 +3,7 @@ import { Project } from "../../sanity/types/projects";
 import { clientConfig } from "../../sanity/config/client-config";
 import { Article } from "../../sanity/types/articles";
 import { Experience } from "../../sanity/types/experiences";
+import { Education } from "../../sanity/types/education";
 import { MultilingualString, MultilingualText, MultilingualArrayString, MultilingualPortableText } from "../../sanity/types/shared";
 
 export type SupportedLocale = 'en' | 'es' | 'pt';
@@ -67,6 +68,12 @@ export const getProjectBySlug = async (slug: string): Promise<Project | null> =>
                   url
                 }
               },
+              gallery[] {
+                asset -> {
+                  _id,
+                  url
+                }
+              },
               skills,
               cta,
               viewCode,
@@ -104,6 +111,60 @@ export const getExperiences = async (): Promise<Experience[]> => {
               },
               companyWebsite,
               employmentType,
+              startDate,
+              endDate,
+              cta,
+              featured,
+              displayOrder
+            }
+        `
+    )
+}
+
+export const getEducations = async (): Promise<Education[]> => {
+    return createClient(clientConfig).fetch(
+        groq`
+            *[_type == "education"] | order(displayOrder asc, startDate desc) {
+              _id,
+              institution,
+              slug,
+              degree,
+              fieldOfStudy,
+              description,
+              honors,
+              institutionLogo {
+                asset -> {
+                  _id,
+                  url
+                }
+              },
+              startDate,
+              endDate,
+              cta,
+              featured,
+              displayOrder
+            }
+        `
+    )
+}
+
+export const getFeaturedEducations = async (): Promise<Education[]> => {
+    return createClient(clientConfig).fetch(
+        groq`
+            *[_type == "education" && featured == true] | order(displayOrder asc, startDate desc) {
+              _id,
+              institution,
+              slug,
+              degree,
+              fieldOfStudy,
+              description,
+              honors,
+              institutionLogo {
+                asset -> {
+                  _id,
+                  url
+                }
+              },
               startDate,
               endDate,
               cta,

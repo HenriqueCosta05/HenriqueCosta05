@@ -17,7 +17,7 @@
     }
   },
   "hero": {
-    "description": "I'm a front-end developer, specialized in crafting high-quality solutions. I work with React, TypeScript, JavaScript, Angular, and tools like Next.js, Tailwind, and Git. I always strive to deliver performance, accessibility, and a great user experience.",
+    "description": "Software Developer with hands-on experience in React.js, Next.js, Node.js, and TypeScript, building scalable, high-performance web applications focused on user experience. I contribute to the development of internal solutions that streamline processes and enhance usability across corporate platforms.",
     "image": "/profile_image.jpg",
     "resumeUrl": "/CV - Henrique Costa.pdf",
     "headerHighlight": "Front-End",
@@ -41,6 +41,28 @@
           "text": "Learn more",
           "href": "/experience/{{slug}}"
         }
+      }
+    ]
+  },
+  "education": {
+      "title": "Education",
+      "description": "Here's a look at my educational background and the qualifications I've earned."
+  },
+  "languages": {
+    "title": "Languages",
+    "description": "These are the languages I speak and my proficiency level in each.",
+    "list": [
+      {
+        "name": "Portuguese",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Advanced"
+      },
+      {
+        "name": "Spanish",
+        "level": "Intermediate"
       }
     ]
   },
