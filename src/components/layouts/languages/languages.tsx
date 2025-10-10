@@ -13,7 +13,7 @@ const Languages = () => {
                 {t("description")}
             </S.LanguagesDescription>
             <S.LanguagesGrid>
-                {languageList.map((language) => (
+                {languageList.map((language: { name: string; level: string }) => (
                     <S.LanguageCard key={language.name}>
                         <S.LanguageName>{language.name}</S.LanguageName>
                         <S.LanguageProficiency>{language.level}</S.LanguageProficiency>
