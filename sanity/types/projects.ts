@@ -1,4 +1,11 @@
-import { MultilingualString, MultilingualText, MultilingualArrayString, SanityImage, CallToAction, Slug } from './shared'
+import { CallToAction, MultilingualArrayString, MultilingualString, MultilingualText, SanityImage, Slug } from './shared';
+
+export type ProjectSEO = {
+  metaTitle?: MultilingualString
+  metaDescription?: MultilingualString
+  keywords?: string[]
+  ogImage?: SanityImage
+}
 
 export type Skill = {
   _key?: string
@@ -35,4 +42,5 @@ export type Project = {
   endDate?: string
   featured?: boolean
   displayOrder?: number
+  seo?: ProjectSEO
 }

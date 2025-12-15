@@ -60,7 +60,6 @@ export const getProjects = async (locale?: string): Promise<Project[]> => {
               }
             }
           }
-          displayOrder
         }
     `
   )

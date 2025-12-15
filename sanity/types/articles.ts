@@ -1,4 +1,12 @@
-import { MultilingualString, MultilingualArrayString, PortableTextBlock, MultilingualPortableText, SanityImage, CallToAction, Slug } from './shared'
+import { CallToAction, MultilingualArrayString, MultilingualPortableText, MultilingualString, SanityImage, Slug } from './shared'
+
+export type ArticleSEO = {
+  metaTitle?: MultilingualString
+  metaDescription?: MultilingualString
+  keywords?: string[]
+  ogImage?: SanityImage
+  canonicalUrl?: string
+}
 
 export type Article = {
   _id: string
@@ -12,4 +20,5 @@ export type Article = {
   mainImage?: SanityImage
   cta?: CallToAction
   featured?: boolean
+  seo?: ArticleSEO
 }

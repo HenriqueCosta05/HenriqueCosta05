@@ -1,7 +1,7 @@
 import { generateBreadcrumbSchema, generateProjectSchema, generateSEO } from "@/lib/seo";
 import { ProjectScreen } from "@/screens";
-import { getProjectBySlug } from "@/services/sanity";
-import { getLocaleKey, getUserLocale } from "@/utils";
+import { getProjectBySlug, getUserLocale } from "@/services";
+import { getLocaleKey } from "@/utils";
 import type { Metadata } from 'next';
 
 interface ProjectPageProps {

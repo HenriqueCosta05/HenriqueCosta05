@@ -10,11 +10,6 @@ const plusJakartaSans = Plus_Jakarta_Sans({
     subsets: ["latin"],
 });
 
-type Props = {
-    children: React.ReactNode;
-    params: Promise<{ locale: string }>;
-};
-
 export async function generateMetadata(): Promise<Metadata> {
     const locale = await getUserLocale() || 'en-US';
 
@@ -46,7 +41,9 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Layout({
     children,
-}: Props) {
+}: {
+    children: React.ReactNode;
+}) {
 
   const locale = await getUserLocale() || 'pt-BR';
 

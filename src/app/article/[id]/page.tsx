@@ -1,7 +1,7 @@
 import { generateArticleSchema, generateBreadcrumbSchema, generateSEO } from "@/lib/seo";
 import { ArticleScreen } from "@/screens";
-import { getArticleBySlug } from "@/services/sanity";
-import { getLocaleKey, getUserLocale } from "@/utils";
+import { getArticleBySlug, getUserLocale } from "@/services";
+import { getLocaleKey } from "@/utils";
 import type { Metadata } from 'next';
 
 interface ArticlePageProps {
