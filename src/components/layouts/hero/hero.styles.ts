@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 export const StyledHeroSection = styled.section`
     margin: 80px auto;
@@ -14,7 +13,7 @@ export const StyledHeroSection = styled.section`
 `;
 
 export const StyledHeroContent = styled(motion.div)`
-    max-width: 876px;
+    max-width: 768px;
 `;
 
 export const StyledHeroTitle = styled.h1`
@@ -33,7 +32,7 @@ export const StyledHeroTitle = styled.h1`
 `;
 
 export const StyledGradientText = styled.span`
-    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -71,7 +70,7 @@ export const StyledCustomButton = styled(Link)`
     justify-content: center;
     padding: 12px 24px;
     width: 180px;
-    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -116,9 +115,9 @@ export const StyledProfileImage = styled(motion.img)`
     width: 100%;
     border-radius: 50%;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     display: flex;
-    
+
     @media (min-width: 1024px) {
         width: 500px;
     }

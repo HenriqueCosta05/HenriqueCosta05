@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 export const StyledFooter = styled.footer`
@@ -42,7 +41,7 @@ export const StyledFooterTitle = styled.h3`
     font-weight: 600;
     color: #333;
     margin: 0;
-    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,7 +67,7 @@ export const StyledFooterLink = styled(Link)`
 
     &:hover {
         opacity: 0.5;
-        color: var(--primary, #b16cea);
+        color: var(--primary, #1e40af);
     }
 `;
 
@@ -85,13 +84,13 @@ export const StyledSocialLink = styled(Link)`
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgba(177, 108, 234, 0.1);
-    color: var(--secondary, #b16cea);
+    background: rgba(30, 64, 175, 0.1);
+    color: #1e40af;
     text-decoration: none;
     transition: all 0.3s ease;
 
     &:hover {
-        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+        background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
         color: white;
         transform: translateY(-2px);
     }

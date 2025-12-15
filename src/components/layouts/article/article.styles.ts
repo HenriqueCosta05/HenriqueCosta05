@@ -32,7 +32,7 @@ export const StyledArticleTitle = styled(motion.h1)`
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 16px;
-    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -139,7 +139,7 @@ export const StyledArticleContent = styled(motion.div)`
         margin: 24px 0;
         padding: 16px 24px;
         border-left: 4px solid var(--primary, #b16cea);
-        background: rgba(177, 108, 234, 0.05);
+        background: rgba(30, 64, 175, 0.05);
         font-style: italic;
         border-radius: 0 8px 8px 0;
     }
@@ -201,7 +201,7 @@ export const StyledLoadingContainer = styled.div`
 export const StyledLoadingSpinner = styled.div`
     width: 40px;
     height: 40px;
-    border: 3px solid rgba(177, 108, 234, 0.2);
+    border: 3px solid rgba(30, 64, 175, 0.2);
     border-top: 3px solid var(--tertiary);
     border-radius: 50%;
     animation: spin 1s linear infinite;

@@ -8,7 +8,7 @@ export const StyledDetailedProjectWrapper = styled(motion.div)`
     margin: 0 auto;
     border-radius: 16px;
     position: relative;
-    
+
     @media (max-width: 768px) {
         padding: 24px 16px;
     }
@@ -18,7 +18,7 @@ export const StyledDetailedProjectTitle = styled(motion.h1)`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,7 +37,7 @@ export const StyledDetailedProjectSubtitle = styled(motion.h3)`
     color: var(--text, #333);
     margin: 32px 0 16px 0;
     position: relative;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -45,10 +45,10 @@ export const StyledDetailedProjectSubtitle = styled(motion.h3)`
         bottom: -4px;
         width: 40px;
         height: 3px;
-        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+        background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
         border-radius: 2px;
     }
-    
+
     @media (max-width: 768px) {
         font-size: 1.25rem;
         margin: 24px 0 12px 0;
@@ -72,7 +72,7 @@ export const StyledDetailedProjectButtonWrapper = styled(motion.div)`
     align-items: center;
     gap: 16px;
     margin-top: 40px;
-    
+
     @media (max-width: 768px) {
         justify-content: center;
         margin-top: 32px;
@@ -99,22 +99,22 @@ export const StyledTechChip = styled(motion.span)`
     align-items: center;
     padding: 8px 16px;
     background: var(--background);
-    border: 1px solid rgba(177, 108, 234, 0.2);
+    border: 1px solid rgba(30, 64, 175, 0.2);
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--text);
     transition: all 0.3s ease;
     cursor: default;
-    
+
     &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(177, 108, 234, 0.3);
-        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+        box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+        background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
         color: white;
         border-color: transparent;
     }
-    
+
     @media (max-width: 768px) {
         padding: 6px 12px;
         font-size: 0.8rem;
@@ -138,13 +138,13 @@ export const StyledFeatureItem = styled(motion.li)`
     position: relative;
     padding: 16px 20px 16px 48px;
     background: var(--background);
-    border: 1px solid rgba(177, 108, 234, 0.15);
+    border: 1px solid rgba(30, 64, 175, 0.15);
     border-radius: 12px;
     color: var(--text);
     font-size: 1rem;
     line-height: 1.6;
     transition: all 0.3s ease;
-    
+
     &:before {
         content: '✓';
         position: absolute;
@@ -153,7 +153,7 @@ export const StyledFeatureItem = styled(motion.li)`
         transform: translateY(-50%);
         width: 24px;
         height: 24px;
-        background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+        background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
         color: white;
         border-radius: 50%;
         display: flex;
@@ -162,7 +162,7 @@ export const StyledFeatureItem = styled(motion.li)`
         font-size: 0.75rem;
         font-weight: bold;
     }
-    
+
     &:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -181,13 +181,13 @@ export const StyledChallengeList = styled(motion.ul)`
 export const StyledChallengeItem = styled(motion.li)`
     position: relative;
     padding: 20px 24px 20px 56px;
-    border: 1px solid rgba(177, 108, 234, 0.15);
+    border: 1px solid rgba(30, 64, 175, 0.15);
     border-radius: 12px;
     color: var(--text);
     font-size: 1rem;
     line-height: 1.6;
     transition: all 0.3s ease;
-    
+
     &:before {
         content: '🎯';
         position: absolute;
@@ -202,7 +202,7 @@ export const StyledChallengeItem = styled(motion.li)`
         justify-content: center;
         font-size: 0.875rem;
     }
-    
+
     &:hover {
         transform: translateX(4px);
     }
@@ -214,7 +214,7 @@ export const StyledImageGrid = styled(motion.div)`
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 16px;
   margin: 40px 0;
-  
+
   @media (max-width: 768px) {
     gap: 12px;
   }
@@ -228,7 +228,7 @@ export const StyledGridImage = styled(motion.img)`
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);

@@ -17,7 +17,7 @@
     }
   },
   "hero": {
-    "description": "Software Developer with hands-on experience in React.js, Next.js, Node.js, and TypeScript, building scalable, high-performance web applications focused on user experience. I contribute to the development of internal solutions that streamline processes and enhance usability across corporate platforms.",
+    "description": "I am a Front-End Developer with solid experience in React.js, Next.js, TypeScript, JavaScript, and Node.js, building modern, scalable, and high-performance web applications. My focus includes front-end architecture, componentization, UI/UX, accessibility (A11y), and continuous improvement of user experience in corporate platforms and digital products.",
     "image": "/profile_image.jpg",
     "resumeUrl": "/CV - Henrique Costa.pdf",
     "headerHighlight": "Front-End",
@@ -45,8 +45,8 @@
     ]
   },
   "education": {
-      "title": "Education",
-      "description": "Here's a look at my educational background and the qualifications I've earned."
+    "title": "Education",
+    "description": "Here's a look at my educational background and the qualifications I've earned."
   },
   "languages": {
     "title": "Languages",
@@ -70,88 +70,28 @@
     "title": "Projects",
     "description": "Check out my projects and the skills I've obtained.",
     "skills": "Technologies used",
+    "tabs": {
+      "all": "All",
+      "website": "Website",
+      "webApp": "Web App",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "api": "API"
+    },
+    "empty": {
+      "title": "No projects found",
+      "description": "There are no projects in this category yet. Check back soon or explore other categories!"
+    },
     "cta": {
       "text": "View all projects",
       "href": "/projects"
     },
     "shared": {
       "cta": {
-          "text": "Learn more",
-          "href": "/project/{slug}"
-        }
-    },
-    "list": [
-      {
-        "projectImage": "/projects/lembrai.png",
-        "projectName": "Lembraí",
-        "shortDescription": "A complete app for managing finances and automotive maintenance, helping users control expenses and keep their vehicles up to date.",
-        "skills": {
-          "0": { "name": "React Native", "hovered": true },
-          "1": { "name": "TypeScript" },
-          "2": { "name": "Expo" },
-          "3": { "name": "Styled Components" },
-          "4": { "name": "Axios" }
-        },
-        "cta": {
-          "text": "Learn more",
-          "href": "/project/{slug}"
-        },
-        "viewCode": {
-          "text": "See on GitHub",
-          "href": "https://github.com/HenriqueCosta05/lembrai"
-        },
-        "functionalities": {
-          "title": "Funcionalities",
-          "description": "Key implemented functionalities include:",
-          "list": {
-            "0": "Fuel expense tracking",
-            "1": "Preventive maintenance reminders",
-            "2": "Detailed expense history",
-            "3": "Expense reports and charts",
-            "4": "Intuitive and modern interface"
-          }
-        },
-        "challenges": {
-          "title": "Challenges",
-          "description": "Main challenges faced include:",
-          "list": {
-            "0": "Offline/online data synchronization",
-            "1": "Implementation of push notifications",
-            "2": "Scalable architecture for multiple users"
-          }
-        }
-      },
-      {
-        "cta": {
-          "text": "Learn more",
-          "href": "/project/{slug}"
-        },
-        "viewCode": {
-          "text": "See on GitHub",
-          "href": "https://github.com/HenriqueCosta05/Restaurantto-Web"
-        },
-        "functionalities": {
-          "title": "Funcionalities",
-          "description": "Key implemented functionalities include:",
-          "list": {
-            "0": "Customer and Supplier Management",
-            "1": "Tenant-based authentication",
-            "2": "Menu management",
-            "3": "Integration with delivery platforms, such as Ifood",
-            "4": "Intuitive and modern interface"
-          }
-        },
-        "challenges": {
-          "title": "Challenges",
-          "description": "Main challenges faced include:",
-          "list": {
-            "0": "Offline/online data synchronization",
-            "1": "Implementation with delivery platforms",
-            "2": "Scalable architecture for multiple users with tenant-based workflow"
-          }
-        }
+        "text": "Learn more",
+        "href": "/project/{slug}"
       }
-    ]
+    }
   },
   "articles": {
     "title": "Articles",

@@ -7,11 +7,11 @@ export const StyledArticleSection = styled(motion.section)`
     max-width: 1600px;
     margin: 20px auto;
     text-align: center;
-    
+
     @media (max-width: 768px) {
         padding: 60px 16px;
     }
-    
+
     @media (min-width: 1200px) {
         padding: 100px 40px;
     }
@@ -21,7 +21,7 @@ export const StyledArticleTitle = styled(motion.h2)`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,14 +42,14 @@ export const StyledArticleGrid = styled(motion.div)`
     margin-right: auto;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 32px;
-    
+
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
         gap: 24px;
         margin-top: 32px;
         padding: 0 8px;
     }
-    
+
     @media (min-width: 1200px) {
         gap: 40px;
         margin-top: 56px;
@@ -62,11 +62,11 @@ export const StyledArticleCard = styled(motion.div)`
     will-change: transform;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    
+
     &:nth-child(even) {
         transform: translateY(20px);
     }
-    
+
     @media (max-width: 768px) {
         &:nth-child(even) {
             transform: translateY(0);

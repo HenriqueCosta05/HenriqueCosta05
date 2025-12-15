@@ -1,5 +1,4 @@
 {
-  
   "shared": {
     "loading": "Carregando...",
     "notFound": "Não encontrado",
@@ -23,7 +22,7 @@
     "headerHighlight": "Desenvolvedor",
     "header": "Front-End",
     "contactHref": "/contact",
-    "description": "Desenvolvedor de Software com experiência prática em React.js, Next.js, Node.js e TypeScript, criando aplicações web escaláveis, performáticas e centradas na experiência do usuário. Contribuo para o desenvolvimento de soluções internas que otimizam processos e melhoram a usabilidade de plataformas corporativas. Apaixonado por aprender novas tecnologias e aprimorar minhas habilidades, estou sempre em busca de desafios que me permitam crescer profissionalmente e agregar valor às equipes com as quais colaboro.",
+    "description": "Sou um Desenvolvedor Front-End com sólida experiência em React.js, Next.js, TypeScript, JavaScript e Node.js, construindo aplicações web modernas, escaláveis e de alto desempenho. Meu foco inclui arquitetura front-end, componentização, UI/UX, acessibilidade (A11y) e melhoria contínua da experiência do usuário em plataformas corporativas e produtos digitais.",
     "cta": "Entre em contato!",
     "downloadResume": "Baixe meu CV"
   },
@@ -46,8 +45,8 @@
     ]
   },
   "education": {
-      "title": "Educação",
-      "description": "Aqui está um resumo da minha formação acadêmica e das qualificações que obtive."
+    "title": "Educação",
+    "description": "Aqui está um resumo da minha formação acadêmica e das qualificações que obtive."
   },
   "languages": {
     "title": "Idiomas",
@@ -71,6 +70,18 @@
     "title": "Projetos",
     "description": "Confira meus projetos e as habilidades que adquiri.",
     "skills": "Tecnologias utilizadas",
+    "tabs": {
+      "all": "Todos",
+      "website": "Website",
+      "webApp": "Aplicação Web",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "api": "API"
+    },
+    "empty": {
+      "title": "Nenhum projeto encontrado",
+      "description": "Ainda não há projetos nesta categoria. Volte em breve ou explore outras categorias!"
+    },
     "shared": {
       "cta": {
         "text": "Saber mais",
@@ -87,11 +98,22 @@
         "projectName": "Lembraí",
         "shortDescription": "Um aplicativo completo para gerenciamento de finanças e manutenção automotiva, ajudando os usuários a controlar gastos e manter seus veículos em dia.",
         "skills": {
-          "0": { "name": "React Native", "hovered": true },
-          "1": { "name": "TypeScript" },
-          "2": { "name": "Expo" },
-          "3": { "name": "Styled Components" },
-          "4": { "name": "Axios" }
+          "0": {
+            "name": "React Native",
+            "hovered": true
+          },
+          "1": {
+            "name": "TypeScript"
+          },
+          "2": {
+            "name": "Expo"
+          },
+          "3": {
+            "name": "Styled Components"
+          },
+          "4": {
+            "name": "Axios"
+          }
         },
         "cta": {
           "text": "Saber mais",
@@ -127,12 +149,25 @@
         "projectName": "Restaurantto",
         "shortDescription": "Uma solução de PDV + ERP que está sendo desenvolvida para impulsionar a produtividade e o fluxo de trabalho de restaurantes de pequeno e médio porte.",
         "skills": {
-          "0": { "name": "React", "hovered": true },
-          "1": { "name": "TypeScript" },
-          "2": { "name": "TailwindCSS" },
-          "3": { "name": "RxJS" },
-          "4": { "name": "Clean Architecture" },
-          "5": { "name": "Docker" }
+          "0": {
+            "name": "React",
+            "hovered": true
+          },
+          "1": {
+            "name": "TypeScript"
+          },
+          "2": {
+            "name": "TailwindCSS"
+          },
+          "3": {
+            "name": "RxJS"
+          },
+          "4": {
+            "name": "Clean Architecture"
+          },
+          "5": {
+            "name": "Docker"
+          }
         },
         "cta": {
           "text": "Saber mais",

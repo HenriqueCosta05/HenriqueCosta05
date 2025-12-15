@@ -2,17 +2,16 @@
 
 import { useTranslations } from "next-intl";
 import {
-    StyledHeroSection,
-    StyledHeroContent,
-    StyledHeroTitle,
-    StyledGradientText,
-    StyledHeroDescription,
     StyledActionContainer,
-    StyledDownloadLink,
     StyledArrowIcon,
+    StyledDownloadLink,
+    StyledGradientText,
+    StyledHeroContent,
+    StyledHeroDescription,
+    StyledHeroSection,
+    StyledHeroTitle,
     StyledProfileImage
 } from "./hero.styles";
-import { Button } from "@/components/base";
 
 const Hero = () => {
     const t = useTranslations("hero");

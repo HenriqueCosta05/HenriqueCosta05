@@ -21,7 +21,7 @@
     "resumeUrl": "/CV - Henrique Costa.pdf",
     "headerHighlight": "Desarrollador",
     "header": "Front-End",
-    "description": "Desarrollador de Software con experiencia práctica en React.js, Next.js, Node.js y TypeScript, creando aplicaciones web escalables, de alto rendimiento y centradas en la experiencia del usuario. Contribuyo al desarrollo de soluciones internas que optimizan procesos y mejoran la usabilidad de plataformas corporativas.",
+    "description": "Soy un Desarrollador Front-End con sólida experiencia en React.js, Next.js, TypeScript, JavaScript y Node.js, construyendo aplicaciones web modernas, escalables y de alto rendimiento. Mi enfoque incluye arquitectura front-end, componentización, UI/UX, accesibilidad (A11y) y mejora continua de la experiencia del usuario en plataformas corporativas y productos digitales.",
     "contactHref": "/contact",
     "cta": "¡Contáctame!",
     "downloadResume": "Descargar CV"
@@ -45,8 +45,8 @@
     ]
   },
   "education": {
-      "title": "Educación",
-      "description": "Aquí tienes un vistazo a mi formación académica y las cualificaciones que he obtenido."
+    "title": "Educación",
+    "description": "Aquí tienes un vistazo a mi formación académica y las cualificaciones que he obtenido."
   },
   "languages": {
     "title": "Idiomas",
@@ -70,11 +70,23 @@
     "title": "Proyectos",
     "description": "Descubre mis proyectos y las habilidades que he adquirido.",
     "skills": "Tecnologías utilizadas",
-      "shared": {
+    "tabs": {
+      "all": "Todos",
+      "website": "Sitio Web",
+      "webApp": "Aplicación Web",
+      "mobile": "Móvil",
+      "desktop": "Escritorio",
+      "api": "API"
+    },
+    "empty": {
+      "title": "No se encontraron proyectos",
+      "description": "Aún no hay proyectos en esta categoría. ¡Vuelve pronto o explora otras categorías!"
+    },
+    "shared": {
       "cta": {
-          "text": "Saber más",
-          "href": "/project/{slug}"
-        }
+        "text": "Saber más",
+        "href": "/project/{slug}"
+      }
     },
     "cta": {
       "text": "Ver todos los proyectos",
@@ -86,11 +98,22 @@
         "projectName": "Lembraí",
         "shortDescription": "Una aplicación completa para gestionar finanzas y mantenimiento automotriz, ayudando a los usuarios a controlar gastos y mantener sus vehículos al día.",
         "skills": {
-          "0": { "name": "React Native", "hovered": true },
-          "1": { "name": "TypeScript" },
-          "2": { "name": "Expo" },
-          "3": { "name": "Styled Components" },
-          "4": { "name": "Axios" }
+          "0": {
+            "name": "React Native",
+            "hovered": true
+          },
+          "1": {
+            "name": "TypeScript"
+          },
+          "2": {
+            "name": "Expo"
+          },
+          "3": {
+            "name": "Styled Components"
+          },
+          "4": {
+            "name": "Axios"
+          }
         },
         "cta": {
           "text": "Saber más",
@@ -126,12 +149,25 @@
         "projectName": "Restaurantto",
         "shortDescription": "Una solución POS + ERP que se está desarrollando para mejorar la productividad y el flujo de trabajo de restaurantes pequeños y medianos.",
         "skills": {
-          "0": { "name": "React", "hovered": true },
-          "1": { "name": "TypeScript" },
-          "2": { "name": "TailwindCSS" },
-          "3": { "name": "RxJS" },
-          "4": { "name": "Clean Architecture" },
-          "5": { "name": "Docker" }
+          "0": {
+            "name": "React",
+            "hovered": true
+          },
+          "1": {
+            "name": "TypeScript"
+          },
+          "2": {
+            "name": "TailwindCSS"
+          },
+          "3": {
+            "name": "RxJS"
+          },
+          "4": {
+            "name": "Clean Architecture"
+          },
+          "5": {
+            "name": "Docker"
+          }
         },
         "cta": {
           "text": "Saber más",

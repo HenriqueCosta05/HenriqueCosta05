@@ -1,4 +1,4 @@
-import { defineType, defineField } from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'article',
@@ -88,6 +88,55 @@ export default defineType({
       name: 'featured',
       title: 'Featured Article',
       type: 'boolean',
+    }),
+    defineField({
+      name: 'seo',
+      title: 'SEO Settings',
+      type: 'object',
+      fields: [
+        {
+          name: 'metaTitle',
+          title: 'Meta Title',
+          type: 'object',
+          description: 'Override the default title (recommended: 50-60 characters)',
+          fields: [
+            { name: 'en', title: 'English', type: 'string', validation: (Rule: any) => Rule.max(60) },
+            { name: 'es', title: 'Spanish', type: 'string', validation: (Rule: any) => Rule.max(60) },
+            { name: 'pt', title: 'Portuguese', type: 'string', validation: (Rule: any) => Rule.max(60) },
+          ],
+        },
+        {
+          name: 'metaDescription',
+          title: 'Meta Description',
+          type: 'object',
+          description: 'SEO description (recommended: 150-160 characters)',
+          fields: [
+            { name: 'en', title: 'English', type: 'text', validation: (Rule: any) => Rule.max(160) },
+            { name: 'es', title: 'Spanish', type: 'text', validation: (Rule: any) => Rule.max(160) },
+            { name: 'pt', title: 'Portuguese', type: 'text', validation: (Rule: any) => Rule.max(160) },
+          ],
+        },
+        {
+          name: 'keywords',
+          title: 'Keywords',
+          type: 'array',
+          of: [{ type: 'string' }],
+          description: 'SEO keywords for this article',
+        },
+        {
+          name: 'ogImage',
+          title: 'Open Graph Image',
+          type: 'image',
+          description: 'Image for social media sharing (1200x630px recommended)',
+          options: { hotspot: true },
+        },
+        {
+          name: 'canonicalUrl',
+          title: 'Canonical URL',
+          type: 'url',
+          description: 'Canonical URL if this article was published elsewhere first',
+        },
+      ],
     }),
   ],
 })

@@ -1,6 +1,6 @@
 "use client";
 
-import { Experience, Hero, Projects, Articles, Education, Languages } from "@/components/layouts";
+import { Articles, Education, Experience, Hero, Projects } from "@/components/layouts";
 import { Footer, Navbar } from "@/components/templates";
 
 export default function Home() {
@@ -8,7 +8,6 @@ export default function Home() {
     <main>
       <Navbar logoText="Henrique" highlightedText="Costa" />
       <Hero />
-      <Languages />
       <Experience />
       <Education />
       <Projects />

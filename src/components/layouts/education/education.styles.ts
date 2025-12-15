@@ -11,7 +11,7 @@ export const StyledEducationTitle = styled.h2`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 40px;
-    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

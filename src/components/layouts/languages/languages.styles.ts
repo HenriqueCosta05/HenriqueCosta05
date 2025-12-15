@@ -10,13 +10,13 @@ export const LanguagesTitle = styled.h2`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 40px;
-    background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     text-align: center;
-    
+
     @media (min-width: 768px) {
         font-size: 3rem;
     }
@@ -56,7 +56,7 @@ export const LanguageCard = styled.div`
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+
     &:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);

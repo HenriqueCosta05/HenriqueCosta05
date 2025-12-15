@@ -29,7 +29,7 @@ export const StyledLogoContainer = styled(Link)`
 `;
 
 export const StyledGradientText = styled.span`
-    background: linear-gradient(to right, #c084fc, #ef4444, #ea580c);
+    background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

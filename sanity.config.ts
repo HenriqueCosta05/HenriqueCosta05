@@ -5,17 +5,17 @@ import schemas from "./sanity/schemas";
 const isDevelopment = process.env.NODE_ENV === "development";
 const isProduction = process.env.NODE_ENV === "production";
 
-const projectId = isDevelopment 
-  ? process.env.NEXT_PUBLIC_SANITY_PROJECT_ID 
+const projectId = isDevelopment
+  ? process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
   : (process.env.SANITY_PROJECT_ID || process.env.NEXT_PUBLIC_SANITY_PROJECT_ID);
 
-const dataset = isDevelopment 
-  ? process.env.NEXT_PUBLIC_SANITY_PROJECT_DATASET 
+const dataset = isDevelopment
+  ? process.env.NEXT_PUBLIC_SANITY_PROJECT_DATASET
   : (process.env.SANITY_PROJECT_DATASET || process.env.NEXT_PUBLIC_SANITY_PROJECT_DATASET);
 
-const apiVersion = isDevelopment 
-  ? (process.env.NEXT_PUBLIC_SANITY_PROJECT_API_VERSION || "2024-03-01")
-  : (process.env.SANITY_API_VERSION || process.env.NEXT_PUBLIC_SANITY_PROJECT_API_VERSION || "2024-03-01");
+const apiVersion = isDevelopment
+  ? (process.env.NEXT_PUBLIC_SANITY_PROJECT_API_VERSION || "2026-01-01")
+  : (process.env.SANITY_API_VERSION || process.env.NEXT_PUBLIC_SANITY_PROJECT_API_VERSION || "2026-01-01");
 
 if (!projectId) {
   const envVar = isDevelopment ? "NEXT_PUBLIC_SANITY_PROJECT_ID" : "SANITY_PROJECT_ID";

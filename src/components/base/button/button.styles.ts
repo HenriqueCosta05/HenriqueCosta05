@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import styled from "styled-components";
 
 export const StyledLink = styled(Link)`
   display: inline-block;
@@ -11,7 +11,7 @@ export const StyledLink = styled(Link)`
 export const ButtonContainer = styled.div`
   position: relative;
   height: 60px;
-  background: linear-gradient(to right, #fb923c, #ef4444, #9333ea);
+  background: linear-gradient(to right, #1e40af, #1e3a8a, #000000);
   width: fit-content;
   min-width: 120px;
   padding: 0 20px;

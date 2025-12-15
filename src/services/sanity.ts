@@ -1,10 +1,10 @@
 import { createClient, groq } from "next-sanity";
-import { Project } from "../../sanity/types/projects";
 import { clientConfig } from "../../sanity/config/client-config";
 import { Article } from "../../sanity/types/articles";
-import { Experience } from "../../sanity/types/experiences";
 import { Education } from "../../sanity/types/education";
-import { MultilingualString, MultilingualText, MultilingualArrayString, MultilingualPortableText } from "../../sanity/types/shared";
+import { Experience } from "../../sanity/types/experiences";
+import { Project } from "../../sanity/types/projects";
+import { MultilingualArrayString, MultilingualPortableText, MultilingualString, MultilingualText } from "../../sanity/types/shared";
 
 export type SupportedLocale = 'en' | 'es' | 'pt';
 
@@ -48,6 +48,18 @@ export const getProjects = async (locale?: string): Promise<Project[]> => {
           startDate,
           endDate,
           featured,
+          displayOrder,
+          seo {
+            metaTitle,
+            metaDescription,
+            keywords,
+            ogImage {
+              asset -> {
+                _id,
+                url
+              }
+            }
+          }
           displayOrder
         }
     `
@@ -224,7 +236,19 @@ export const getArticles = async (): Promise<Article[]> => {
               },
               tags,
               cta,
-              featured
+              featured,
+              seo {
+                metaTitle,
+                metaDescription,
+                keywords,
+                ogImage {
+                  asset -> {
+                    _id,
+                    url
+                  }
+                },
+                canonicalUrl
+              }
             }
         `
     )
@@ -249,7 +273,19 @@ export const getArticleBySlug = async (slug: string): Promise<Article | null> =>
               },
               tags,
               cta,
-              featured
+              featured,
+              seo {
+                metaTitle,
+                metaDescription,
+                keywords,
+                ogImage {
+                  asset -> {
+                    _id,
+                    url
+                  }
+                },
+                canonicalUrl
+              }
             }
         `,
         { slug }
@@ -421,7 +457,7 @@ export const getArticlesByTag = async (tag: string, locale: string = "en"): Prom
     // For now, let's fetch all articles and filter client-side
     // In production, you might want to optimize this with a more complex GROQ query
     const allArticles = await getArticles()
-    return allArticles.filter(article => 
+    return allArticles.filter(article =>
         article.tags?.[locale as keyof typeof article.tags]?.includes(tag)
     )
 }
@@ -447,7 +483,7 @@ export const getAllTags = async (locale: string = "en"): Promise<string[]> => {
     const articles: { tags: any }[] = await createClient(clientConfig).fetch(
         groq`*[_type == "article"] { tags }`
     )
-    const allTags: string[] = articles.flatMap(article => 
+    const allTags: string[] = articles.flatMap(article =>
         Array.isArray(article.tags?.[locale]) ? article.tags[locale] : []
     )
     return [...new Set(allTags.filter(Boolean))]
@@ -455,13 +491,13 @@ export const getAllTags = async (locale: string = "en"): Promise<string[]> => {
 
 // Content management functions with pagination
 export const getProjectsPaginated = async (
-    page: number = 1, 
-    limit: number = 10, 
+    page: number = 1,
+    limit: number = 10,
     featured?: boolean
 ): Promise<{ projects: Project[], total: number, hasMore: boolean }> => {
     const offset = (page - 1) * limit;
     const featuredFilter = featured !== undefined ? `&& featured == ${featured}` : '';
-    
+
     const [projects, totalCount] = await Promise.all([
         createClient(clientConfig).fetch(
             groq`
@@ -502,13 +538,13 @@ export const getProjectsPaginated = async (
 }
 
 export const getArticlesPaginated = async (
-    page: number = 1, 
-    limit: number = 10, 
+    page: number = 1,
+    limit: number = 10,
     featured?: boolean
 ): Promise<{ articles: Article[], total: number, hasMore: boolean }> => {
     const offset = (page - 1) * limit;
     const featuredFilter = featured !== undefined ? `&& featured == ${featured}` : '';
-    
+
     const [articles, totalCount] = await Promise.all([
         createClient(clientConfig).fetch(
             groq`
@@ -544,7 +580,7 @@ export const getArticlesPaginated = async (
 
 // Search functionality
 export const searchContent = async (
-    query: string, 
+    query: string,
     contentTypes: ('project' | 'article' | 'experience')[] = ['project', 'article', 'experience']
 ): Promise<{
     projects: Project[],
@@ -552,7 +588,7 @@ export const searchContent = async (
     experiences: Experience[]
 }> => {
     const typeFilter = contentTypes.map(type => `_type == "${type}"`).join(' || ');
-    
+
     const results = await createClient(clientConfig).fetch(
         groq`
             *[${typeFilter} && (
