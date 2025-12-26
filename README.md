@@ -1,53 +1,50 @@
 <h1 align="center">Hi 👋, I'm Henrique Costa</h1>
-<h3 align="center">A passionate fullstack developer from Brazil 🇧🇷</h3>
+<h3 align="center">Web & Mobile Developer</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=henriquecosta05&label=Profile%20views&color=0e75b6&style=flat" alt="henriquecosta05" />
 </p>
 
----
-
-### 🔗 Connect with me
-
-<p align="left">
+<p align="center">
   <a href="https://linkedin.com/in/henriquecosta05" target="_blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:henrique.costa.carreiras@hmail">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
 
 ---
 
-### 📊 GitHub Stats
+### 🔍 About Me
+- 🚀 Currently building full-stack applications with **React.js** and **Node.js**.
+- 🛠️ Deeply interested in **Software Architecture** and **Performance Optimization**.
+- 🧪 Passionate about TDD and clean code.
+- 💬 Ask me about **React, TypeScript, or Node.js**.
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=henriquecosta05&show_icons=true&locale=en" alt="henriquecosta05" />
+---
+
+### 🚀 Tech Stack
+
+**Front-End & Mobile**
+* ![Front-End](https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,angular,redux,tailwind,sass,styledcomponents,materialui,vite,vitest,tauri&theme=dark)
+
+**Back-End & Database**
+* ![Back-End](https://skillicons.dev/icons?i=nodejs,nestjs,express,prisma,postgres,mongodb,mysql&theme=dark)
+
+**DevOps & Tools**
+* ![DevOps](https://skillicons.dev/icons?i=docker,linux,githubactions,git,figma,cypress,electron&theme=dark)
+
+---
+
+### ⚡ Recent Projects
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **Lora Design System** | A multiplatform design system being developed for consistency and accessibility in front-end projects. | `React` `Next.js`, `Storybook`, `CSS` |
+| **InfraView** | An AI-powered documentation software for complex applications. | `Python`, `React.js` |
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" width="100%"/>
 </p>
-
----
-
-## 🚀 My Tech Stack
-
-### 🖥️ Front-End
-![Tech Stack](https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,angular,redux,tailwind,sass,styledcomponents,materialui,vite,vitest,tauri&theme=dark&perline=7)
-
-### 🔧 Back-End
-![Back-End](https://skillicons.dev/icons?i=nodejs,nestjs,express,prisma&theme=dark&perline=7)
-
-### 🗄️ Databases
-![Databases](https://skillicons.dev/icons?i=postgres,mongodb,mysql&theme=dark&perline=7)
-
-### ⚙️ DevOps & Tools
-![DevOps](https://skillicons.dev/icons?i=docker,linux,ubuntu,windows,github,githubactions,git,npm,yarn,bash&theme=dark&perline=7)
-
-### 🧪 Testing & QA
-![Testing](https://skillicons.dev/icons?i=cypress&theme=dark&perline=7)
-
-### 🎨 Design
-![Design](https://skillicons.dev/icons?i=figma&theme=dark&perline=7)
-
-### 🧩 Other Tools & Frameworks
-![Other](https://skillicons.dev/icons?i=electron,mint&theme=dark&perline=7)
-
----
-
-📫 **Feel free to connect or reach out — I'm always up for collaboration and exciting new projects!**
